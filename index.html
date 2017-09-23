@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <div class="header__image"></div>
+    <button class="header__humburger"></button>
+    <ul class="header-list">
+      <li class="header-list__item"></li>
+      <li class="header-list__item"></li>
+      <li class="header-list__item"></li>
+      <li class="header-list__item"></li>
+    </ul>
+  </header>
+  <main class="main">
+    <section class="header-image">
+      <img class="header-image__logo" src="http://placehold.it/150x100" width="" height="" />
+      <h1 class="header-image__text">Милые штуки ручной работы для дома</h1>
+    </section>
+    <section class="product-categories">
+      <div class="product-categories__category interior">
+        <span class="product-categories__title">Предметы интерьера</span>
+      </div>
+      <div class="product-categories__category toys">
+        <span class="product-categories__title">Детские игрушки</span>
+      </div>
+    </section>
+    <section class="product-of-week">
+      <article class="product-of-week__container">
+        <h3 class="product-of-week__name">Вязанные корзинки
+          <h3/>
+          <h2 class="product-of-week__category-name">Товар недели</h2>
+          <p class="product-of-week__description">
+            Экологически чистая пряжа, ручная работа. Доступы в шести расцветках, и трех размерах.
+          </p>
+          <table class="table">
+            <tr class="table__tr">
+              <td class="table__td">Цвет:</td>
+              <td class="table__td">«Тиффани»/серый</td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Диаметр:</td>
+              <td class="table__td">25 см</td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Высота:</td>
+              <td class="table__td">15 см</td>
+            </tr>
+          </table>
+          <img class="product-of-week__figure" src="http://placehold.it/150x100" width="" height="">
+          <span class="product-of-week__price">Цена: 990 руб</span>
+          <a class="product-of-week__order" href="#">Заказать</a>
+      </article>
+    </section>
+    <section class="about-us">
+      <h2 class="about-us__name"></h2>
+      <div class="advantages">
+        <img class="advantages__figure" src="http://placehold.it/150x100" alt="">
+        <h3 class="advantages__name">Экологически чистые материалы</h3>
+      </div>
+      <div class="advantages">
+        <img class="advantages__figure" src="http://placehold.it/150x100" alt="">
+        <h3 class="advantages__name">Скандинавский стиль по российской цене</h3>
+      </div>
+      <div class="advantages">
+        <img class="advantages__figure" src="http://placehold.it/150x100" alt="">
+        <h3 class="advantages__name">Увеличивает лайки на фотографиях</h3>
+      </div>
+      <div class="advantages">
+        <img class="advantages__figure" src="http://placehold.it/150x100" alt="">
+        <h3 class="advantages__name">Связано вручную с любовью и умилением</h3>
+      </div>
+      <div class="advantages">
+        <img class="advantages__figure" src="http://placehold.it/150x100" alt="">
+        <h3 class="advantages__name">Поддержка отечественного производителя</h3>
+      </div>
+      <div class="advantages">
+        <img class="advantages__figure" src="http://placehold.it/150x100" alt="">
+        <h3 class="advantages__name">Поставляется в подарочной упаковке</h3>
+      </div>
+    </section>
+    <section class="review">
+      <h2 class="review__block-title">Отзывы</h2>
+      <p class="rewiew__description">
+        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,
+        я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+      </p>
+      <p class="review__fio">Анастасия Красильникова</p>
+      <p class="review__nickname">@misssssiskras</p>
+      <div class="review__container-button">
+        <button class="review__left-slide"></button>
+        <button class="review__right-slide"></button>
+      </div>
+      <a class="review__write-review" href="#">Написать</a>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__name">Контакты</h2>
+      <div class="contacts__contacts-container">
+        <span class="contacts__sort">e-mail:</span>
+        <e-mail class="email">info@mimimishkashop.ru</e-mail>
+      </div>
+      <div class="contacts__contacts-container">
+        <span class="contacts__sort">адрес:</span>
+        <adress class="adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</adress>
+      </div>
+      <div class="map"></div>
+      <a class="contacts__send-us" href="#">Напишите нам</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__sochiallinks">
+      <i class="footer__instagram"></i>
+      <i class="footer__facebook"></i>
+      <i class="footer__twitter"></i>
+    </div>
+    <div class="footer__htmlacademy">
+      <p class="footer__autor">Разработано</p>
+      <svg></svg>
+    </div>
+  </footer>
+</body>
+
 </html>
