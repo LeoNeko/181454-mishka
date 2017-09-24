@@ -11,10 +11,10 @@
     <div class="header__image"></div>
     <button class="header__humburger"></button>
     <ul class="header-list">
-      <li class="header-list__item"></li>
-      <li class="header-list__item"></li>
-      <li class="header-list__item"></li>
-      <li class="header-list__item"></li>
+      <li class="header-list__item">Каталог товаров</li>
+      <li class="header-list__item">Вязание на заказ</li>
+      <li class="header-list__item header-list__item--search">Поиск по сайту</li>
+      <li class="header-list__item header-list__item--basket">Корзина: пока пусто</li>
     </ul>
   </header>
   <main class="main">
@@ -27,12 +27,12 @@
     <section class="form-container">
       <form class="from" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="from__fieldset">
-          <legend>Тип</legend>
+          <legend class="form__name">Тип</legend>
           <label class="form__label" for=""><input class="form__radio" type="radio" name="Аксессуары">Аксессуары для интерьера</label>
           <label class="form__label" for ""><input class="form__radio" type="radio" name="Игрушки">Детская игрушка</label>
         </fieldset>
         <fieldset class="from__fieldset">
-          <legend>Цвет</legend>
+          <legend class="form__name">Цвет</legend>
           <label class="form__label" for=""><input class="form__checkbox" type="checkbox" name="Белый" checked>Белый</label>
           <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Серый" checked>Серый</label>
           <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Тиффани">Тиффани</label>
@@ -41,21 +41,21 @@
           <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Оранжевый">Оранжевый</label>
         </fieldset>
         <fieldset class="from__fieldset">
-          <legend>ФИО</legend>
+          <legend class="form__name">ФИО</legend>
           <label class="form__label" for="">Имя:</label><input class="form__text" type="text" name="Имя">
           <label class="form__label" for "">Фамилия:</label><input class="form__text" type="text" name="Фамилия">
           <label class="form__label" for "">Отчество:</label><input class="form__text" type="text" name="Отчество">
         </fieldset>
         <fieldset class="from__fieldset">
-          <legend>Тел</legend>
+          <legend class="form__name">Тел</legend>
           <label class="form__label" for=""></label><input class="form__tel" type="text" name="Тел">
         </fieldset>
         <fieldset class="from__fieldset">
-          <legend>E-Mail</legend>
+          <legend class="form__name">E-Mail</legend>
           <label class="form__label" for=""></label><input class="form__email" type="text" name="Тел">
         </fieldset>
         <fieldset class="from__fieldset">
-          <legend>Доп</legend>
+          <legend class="form__name">Доп</legend>
           <textarea class="form__textarea"></textarea>
         </fieldset>
         <p class="form__necessarily">*Поля обязательные для заполнения</p>
@@ -64,7 +64,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__sochiallinks">
+    <div class="footer__social-links">
       <i class="footer__instagram"></i>
       <i class="footer__facebook"></i>
       <i class="footer__twitter"></i>
