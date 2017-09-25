@@ -18,9 +18,9 @@
     </ul>
   </header>
   <main class="main">
-    <section class="catalog">
-      <h2 class="catalog__name">Вязание на заказ</h2>
-      <p class="catalog__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+    <section class="form-header">
+      <h2 class="form-header__name">Вязание на заказ</h2>
+      <p class="form-header__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
         детали.
       </p>
     </section>
@@ -28,35 +28,63 @@
       <form class="from" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="from__fieldset">
           <legend class="form__name">Тип</legend>
-          <label class="form__label" for=""><input class="form__radio" type="radio" name="Аксессуары">Аксессуары для интерьера</label>
-          <label class="form__label" for ""><input class="form__radio" type="radio" name="Игрушки">Детская игрушка</label>
+          <div class="form__container">
+            <label class="form__label" for=""><input class="form__radio" type="radio" name="Аксессуары">Аксессуары для интерьера</label>
+          </div>
+          <div class="form__container">
+            <label class="form__label" for ""><input class="form__radio" type="radio" name="Игрушки">Детская игрушка</label>
+          </div>
         </fieldset>
         <fieldset class="from__fieldset">
           <legend class="form__name">Цвет</legend>
-          <label class="form__label" for=""><input class="form__checkbox" type="checkbox" name="Белый" checked>Белый</label>
-          <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Серый" checked>Серый</label>
-          <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Тиффани">Тиффани</label>
-          <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Черный">Черный</label>
-          <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Розовый">Розовый</label>
-          <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Оранжевый">Оранжевый</label>
+          <div class="form__container">
+            <label class="form__label" for=""><input class="form__checkbox" type="checkbox" name="Белый" checked>Белый</label>
+          </div>
+          <div class="form__container">
+            <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Серый" checked>Серый</label>
+          </div>
+          <div class="form__container">
+            <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Тиффани">Тиффани</label>
+          </div>
+          <div class="form__container">
+            <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Черный">Черный</label>
+          </div>
+          <div class="form__container">
+            <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Розовый">Розовый</label>
+          </div>
+          <div class="form__container">
+            <label class="form__label" for ""><input class="form__checkbox" type="checkbox" name="Оранжевый">Оранжевый</label>
+          </div>
         </fieldset>
         <fieldset class="from__fieldset">
           <legend class="form__name">ФИО</legend>
-          <label class="form__label" for="">Имя:</label><input class="form__text" type="text" name="Имя">
-          <label class="form__label" for "">Фамилия:</label><input class="form__text" type="text" name="Фамилия">
-          <label class="form__label" for "">Отчество:</label><input class="form__text" type="text" name="Отчество">
+          <div class="form__container">
+            <label class="form__label" for="">Имя:</label><input class="form__text" type="text" name="Имя">
+          </div>
+          <div class="form__container">
+            <label class="form__label" for "">Фамилия:</label><input class="form__text" type="text" name="Фамилия">
+          </div>
+          <div class="form__container">
+            <label class="form__label" for "">Отчество:</label><input class="form__text" type="text" name="Отчество">
+          </div>
         </fieldset>
         <fieldset class="from__fieldset">
           <legend class="form__name">Тел</legend>
-          <label class="form__label" for=""></label><input class="form__tel" type="text" name="Тел">
+          <div class="form__container">
+            <label class="form__label" for=""></label><input class="form__tel" type="text" name="Тел">
+          </div>
         </fieldset>
         <fieldset class="from__fieldset">
           <legend class="form__name">E-Mail</legend>
-          <label class="form__label" for=""></label><input class="form__email" type="text" name="Тел">
+          <div class="form__container">
+            <label class="form__label" for=""></label><input class="form__email" type="text" name="Тел">
+          </div>
         </fieldset>
         <fieldset class="from__fieldset">
           <legend class="form__name">Доп</legend>
-          <textarea class="form__textarea"></textarea>
+          <div class="form__container">
+            <textarea class="form__textarea"></textarea>
+          </div>
         </fieldset>
         <p class="form__necessarily">*Поля обязательные для заполнения</p>
         <button class="form__send">Отправить заказ</button>
