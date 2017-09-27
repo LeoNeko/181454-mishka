@@ -13,10 +13,10 @@
     <div class="header__image"></div>
     <button class="header__humburger"></button>
     <ul class="header-list">
-      <li class="header-list__item">Каталог товаров</li>
-      <li class="header-list__item">Вязание на заказ</li>
-      <li class="header-list__item header-list__item--search">Поиск по сайту</li>
-      <li class="header-list__item header-list__item--basket">Корзина: пока пусто</li>
+      <li class="header-list__item"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="header-list__item"><a href="form.html">Вязание на заказ</a></li>
+      <li class="header-list__item header-list__item--search"><a href="#">Поиск по сайту</a></li>
+      <li class="header-list__item header-list__item--basket"><a href="#">Корзина: пока пусто</a></li>
     </ul>
   </header>
   <main class="main">
@@ -33,7 +33,7 @@
     </section>
     <section class="product-of-week">
       <article class="product-of-week__container">
-        <h3 class="product-of-week__name">Вязанные корзинки<h3/>
+        <h3 class="product-of-week__name">Вязанные корзинки</h3>
           <h2 class="product-of-week__category">Товар недели</h2>
           <p class="product-of-week__description">
             Экологически чистая пряжа, ручная работа. Доступы в шести расцветках, и трех размерах.
@@ -109,7 +109,9 @@
         <adress class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</adress>
       </div>
       <div class="contacts__map"></div>
-      <button class="button">Напишите нам</button>
+      <div class="contacts__contact-container">
+        <button class="button">Напишите нам</button>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -128,10 +130,12 @@
     <div class="modal">
       <p class="maodal__title">Добавить в корзину</p>
       <p class="modal__description">Выберите размер:</p>
-      <div class="modal__size">S</div>
-      <div class="modal__size">М</div>
-      <div class="modal__size">L</div>
-      <button class="modal__send">Отправить</button>
+      <div class="modal__container">
+        <div class="modal__size">S</div>
+        <div class="modal__size">М</div>
+        <div class="modal__size">L</div>
+      </div>
+      <button class="modal__send">Добавить</button>
     </div>
   </div>
 </body>
