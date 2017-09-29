@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="header__image"></div>
     <button class="header__humburger"></button>
     <ul class="header-list">
-      <li class="header-list__item">Каталог товаров</li>
-      <li class="header-list__item">Вязание на заказ</li>
-      <li class="header-list__item header-list__item--search">Поиск по сайту</li>
-      <li class="header-list__item header-list__item--basket">Корзина: пока пусто</li>
+      <li class="header-list__item"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="header-list__item"><a href="form.html">Вязание на заказ</a></li>
+      <li class="header-list__item header-list__item--search"><a href="#">Поиск по сайту</a></li>
+      <li class="header-list__item header-list__item--basket"><a href="#">Корзина: пока пусто</a></li>
     </ul>
   </header>
   <main class="main">
@@ -27,10 +28,10 @@
         <div class="products-item__container">
           <h3 class="products-item__name">Зайчик-попрыгайчик</h3>
           <p class="products-item__description">Рост 30 см, вес 200 г</p>
-        </div>
-        <div class="products-item-container">
-          <span class="products-item__price">1 200 руб.</span>
-          <i class="products-item__basket"></i>
+          <div class="products-item-container">
+            <span class="products-item__price">1 200 руб.</span>
+            <i class="products-item__basket"></i>
+          </div>
         </div>
       </article>
       <article class="products-item">
@@ -38,10 +39,10 @@
         <div class="products-item__container">
           <h3 class="products-item__name">Корзинка для белья</h3>
           <p class="products-item__description">Диаметр 15 см, высота 10 см</p>
-        </div>
-        <div class="products-item-container">
-          <span class="products-item__price">690 руб.</span>
-          <i class="products-item__basket"></i>
+          <div class="products-item-container">
+            <span class="products-item__price">690 руб.</span>
+            <i class="products-item__basket"></i>
+          </div>
         </div>
       </article>
       <article class="products-item">
@@ -49,19 +50,24 @@
         <div class="products-item__container">
           <h3 class="products-item__name">Большая корзинка для игрушек</h3>
           <p class="products-item__description">Диаметр 30 см, высота 30 см</p>
-        </div>
-        <div class="products-item__price-container">
-          <span class="products-item__price">1 500 руб.</span>
-          <i class="products-item__basket"></i>
+          <div class="products-item__price-container">
+            <span class="products-item__price">1 500 руб.</span>
+            <i class="products-item__basket"></i>
+          </div>
         </div>
       </article>
       <article class="production-process">
-        <h2 class="production-process__name">Процесс производства</h2>
+        <div class="production-process__container">
+          <h2 class="production-process__name">Процесс производства</h2>
+        </div>
+
         <div class="production-process__video"></div>
-        <p class="production-process__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <button class="write-us">Сделать заказ</button>
+        <div class="production-process__container">
+          <p class="production-process__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <button class="button production-process__button">Сделать заказ</button>
+        </div>
       </article>
     </section>
   </main>

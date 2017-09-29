@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="header__image"></div>
     <button class="header__humburger"></button>
     <ul class="header-list">
-      <li class="header-list__item">Каталог товаров</li>
-      <li class="header-list__item">Вязание на заказ</li>
-      <li class="header-list__item header-list__item--search">Поиск по сайту</li>
-      <li class="header-list__item header-list__item--basket">Корзина: пока пусто</li>
+      <li class="header-list__item"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="header-list__item"><a href="form.html">Вязание на заказ</a></li>
+      <li class="header-list__item header-list__item--search"><a href="#">Поиск по сайту</a></li>
+      <li class="header-list__item header-list__item--basket"><a href="#">Корзина: пока пусто</a></li>
     </ul>
   </header>
   <main class="main">
@@ -87,7 +88,7 @@
           </div>
         </fieldset>
         <p class="form__necessarily">*Поля обязательные для заполнения</p>
-        <button class="write-us">Отправить заказ</button>
+        <button class="button">Отправить заказ</button>
       </form>
     </section>
   </main>
