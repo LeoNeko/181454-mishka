@@ -1,5 +1,6 @@
 .product-categories{
-
+  display: flex;
+  flex-direction: column;
 }
 .product-categories__item{
   .padding-main;
@@ -24,4 +25,20 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .product-categories{
+    flex-direction: row;
+  }
+
+  .product-categories__item--interior,
+  .product-categories__item--toys{
+    flex-grow: 1;
+  }
+
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+
 }

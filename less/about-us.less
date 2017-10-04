@@ -1,8 +1,17 @@
 .about-us{
+  .clear-block;
   .padding-main;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage__figure{
+  fill: @light-green;
 }
 
 .about-us__name{
+  width: 100%;
+
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
@@ -12,4 +21,25 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .about-us{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage{
+    width: 334px;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .about-us{
+    padding: 0 175px;
+  }
+
+  .advantage{
+    width: 350px;
+  }
 }

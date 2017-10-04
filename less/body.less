@@ -1,6 +1,18 @@
 .body{
   width: 320px;
-  margin: auto;
+  margin: 0 auto;
 
   font-family: OpenSans, Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .body{
+    width: @media-screen-tablet;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .body{
+    width: @media-screen-desktop;
+  }
 }

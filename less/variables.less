@@ -1,10 +1,11 @@
-
-
 @light-green: #63d1bb;
 @dark-green: #56c3b2;
 @dark-grey: #444444;
 @background-grey: #f1f1f1;
 @background-light_grey: #ededed;
+
+@media-screen-tablet: 768px;
+@media-screen-desktop: 1200px;
 
 .clear-block{
   margin: 0;
@@ -14,4 +15,15 @@
 .padding-main{
   padding-right: 30px;
   padding-left: 30px;
+
+  @media screen and (min-width: @media-screen-tablet) {
+      padding-right: 50px;
+      padding-left: 50px;
+  }
+
+  @media screen and (min-width: @media-screen-desktop) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
+
