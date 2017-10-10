@@ -85,6 +85,12 @@
   z-index: 995;
 }
 
+.form__container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: ;
+}
+
 .form__container input[type='text']{
   width: 227px;
   padding-top: 19px;
@@ -101,6 +107,19 @@
 @media screen and (min-width: @media-screen-tablet) {
   .form-header__name{
     margin-top: -72px;
+  }
+
+  .form__name::after{
+    display: none;
+  }
+
+  .from__fieldset{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__container{
+    width: 100px;
   }
 }
 
