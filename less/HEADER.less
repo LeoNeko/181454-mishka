@@ -53,7 +53,6 @@
 .header-list__extra{
   flex-grow: 1;
   order: 4;
-  background: #f9f9f9;
 }
 
 .header-list__extra .header-list__item{
@@ -74,7 +73,6 @@
 
   .header-list__category{
     padding-left: 50px;
-    background: #f9f9f9;
   }
 
   .header-list__category a{
@@ -163,11 +161,16 @@
 }
 
 @media screen and (min-width: @media-screen-desktop) {
+  .header{
+    padding: 0 50px;
+  }
+
   .header-list{
     flex-wrap: wrap;
   }
 
   .header__image{
+    flex-grow: 1;
     order: 2;
     padding-left: 0;
     width: 268px;
@@ -181,14 +184,15 @@
   }
 
   .header-list__category{
+    padding-left: 0;
     max-width: 376px;
     order: 1;
-    padding-left: 100px;
     background: #FFF;
   }
 
-  .header-list__category .header-list__item{
-    border-bottom: 1px solid @background-grey;
+  .header__image,
+  .header-list__item{
+    border-bottom:none;
   }
 
   .header-list__category a{
@@ -202,7 +206,6 @@
 
   .header-list__tecnical{
     order: 3;
-    padding-right: 100px;
   }
 
   .header-list__item--basket a{
@@ -211,7 +214,6 @@
 
   .header-list__extra{
     order: 4;
-    padding-left: 100px;
   }
 
   .header-list__item--desctop-only a{
@@ -222,7 +224,7 @@
   }
 
   .header-list__item--tablet a{
-    padding-right: 100px;
+    padding-right: 0;
   }
 
   .header-list__item--desctop-only{

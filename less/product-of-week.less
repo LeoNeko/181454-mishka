@@ -10,6 +10,7 @@
 
 .product-of-week__name{
   .clear-block;
+  margin-bottom: 8px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -24,6 +25,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .product-of-week__description{
@@ -36,6 +38,9 @@
 }
 
 .table-properties{
+  width: 100%;
+  margin-bottom: 28px;
+
   font-size: 15px;
   line-height: 24px;
 
@@ -51,6 +56,11 @@
 }
 
 .product-of-week__price{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 28px;
+  text-align: center;
+
   color: @dark-grey;
   font-size: 17px;
   line-height: 24px;
@@ -61,7 +71,19 @@
   font-size: 17px;
 }
 
+.product-of-week__figure{
+  display: block;
+  width: 100%;
+}
+
 @media screen and (min-width: @media-screen-tablet) {
+  .product-of-week__container{
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 555px;
+  }
+
   .product-of-week__container{
     display: flex;
     flex-wrap: wrap;
@@ -74,10 +96,70 @@
   .product-of-week__figure{
     order: 6;
 
-    min-width: 334px;
+    max-width: 334px;
+  }
+
+  .product-of-week__name,
+  .product-of-week__category{
+    position: absolute;
+  }
+
+  .product-of-week__category{
+    right: 0;
+  }
+
+  .product-of-week__description,
+  .product-of-week__figure{
+    margin-top: 100px;
+  }
+
+  .product-of-week__description{
+    margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-of-week__container-description{
+    order: 1;
+    padding-right: 44px;
+    width: 290px;
+  }
+
+  .product-of-week__container-price{
+    order: 2;
+    padding-right: 44px;
+    width: 290px;
+  }
+
+  .table-properties__td{
+    padding: 10px 0;
+    line-height: 20px;
   }
 }
 
 @media screen and (min-width: @media-screen-desktop) {
+  .product-of-week__figure{
+    margin: 0;
+    max-width: 525px;
+  }
+
+  .product-of-week__container-description,
+  .product-of-week__container-price{
+    padding-right: 58px;
+    width: 517px;
+  }
+
+  .product-of-week__description,
+  .table-properties,
+  .product-of-week__price,
+  .product-of-week__button{
+    width: 292px;
+    margin-left: auto;
+  }
+
+  .table-properties__td{
+    padding: 13px 0;
+    line-height: 20px;
+  }
 
 }

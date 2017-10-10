@@ -25,7 +25,6 @@
 }
 
 .form__name{
-
   color: @light-green;
   font-size: 17px;
   line-height: 16px;
@@ -42,3 +41,66 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+.from__fieldset,
+.form__name{
+  .clear-block;
+  border: none;
+}
+
+.from__fieldset{
+  padding: 27px 0;
+}
+
+.form__name{
+  position: relative;
+  margin-bottom: 9px;
+
+  background-color: #FFF;
+}
+
+.form__name span{
+  position: relative;
+  display: block;
+  max-width: 62px;
+
+  text-transform: uppercase;
+
+  background-color: #fff;
+  z-index: 999;
+}
+
+.form__name-email span{
+  max-width: 81px;
+}
+
+.form__name::after{
+  content: '';
+  width: 260px;
+  display: block;
+  position: relative;
+  top: -8px;
+  border-bottom: 1px solid @light-green;
+
+  z-index: 995;
+}
+
+.form__container input[type='text']{
+  width: 227px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-right: 33px;
+
+  color: grey;
+  font-size: 13px;
+
+  border: 0;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .form-header__name{
+    margin-top: -72px;
+  }
+}
+

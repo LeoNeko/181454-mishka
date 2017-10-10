@@ -34,3 +34,50 @@
   font-size: 17px;
   line-height: 16px;
 }
+
+.production-process__video img{
+  display: block;
+
+  width: 100%;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+
+  .production-process{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production-process__container{
+    padding-left: 41px;
+    padding-right: 41px;
+
+    order: 2;
+  }
+
+  .production-process__name{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .production-process{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 455px;
+  }
+
+  .production-process__container{
+    padding: 0;
+    padding-left: 80px;
+    padding-right: 57px;
+    width: 280px;
+  }
+
+  .production-process__video img{
+    width: 682px;
+    height: 455px;
+  }
+}
