@@ -33,3 +33,59 @@
     line-height: 30px;
     text-decoration: underline;
 }
+
+@media screen and (min-width: @media-screen-tablet) {
+  .review__block-title{
+    order: 1;
+    margin-bottom: 0;
+    margin-right: auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .review{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    min-height: 457px;
+    padding-top: 79px;
+    padding-right: 0;
+
+    background: url(../img/review@1x.jpg) no-repeat;
+    box-sizing: border-box;
+    }
+
+    .review .button{
+      order: 2;
+      height: 52px;
+      width: 175px;
+      margin-right: 0;
+    }
+
+    .rewiew__description{
+      order: 3;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .review__container-contacts{
+      order: 4;
+      margin-right: auto;
+    }
+
+    .review__container-button{
+      order: 5;
+    }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .review{
+    padding-left: 175px;
+  }
+
+  .review__block-title{
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
