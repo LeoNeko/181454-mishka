@@ -1,4 +1,4 @@
-.product-categories{
+.product-categories__direction{
   display: flex;
   flex-direction: column;
 }
@@ -28,13 +28,17 @@
 }
 
 @media screen and (min-width: @media-screen-tablet) {
-  .product-categories{
+  .product-categories__direction{
     flex-direction: row;
   }
 
   .product-categories__item--interior,
   .product-categories__item--toys{
     flex-grow: 1;
+  }
+
+  .header-index{
+    border-top: 1px solid #f1f1f1;
   }
 
 }

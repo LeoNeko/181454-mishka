@@ -56,23 +56,30 @@
     </div>
   </header>
   <main class="main">
-    <div class="body-container">
-      <section class="header-index">
+    <section class="header-index">
+      <div class="header-container body-container">
         <h1 class="header-index__text">Милые штуки ручной работы для дома</h1>
-      </section>
-      <section class="product-categories">
+      </div>
+    </section>
+
+    <section class="product-categories">
+      <div class="body-container product-categories__direction">
         <div class="product-categories__item product-categories__item--interior">
           <span class="product-categories__title">Предметы интерьера</span>
         </div>
         <div class="product-categories__item product-categories__item--toys">
           <span class="product-categories__title">Детские игрушки</span>
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="body-container">
       <section class="product-of-week">
         <article class="product-of-week__container">
           <div class="product-of-week__container-description">
-            <h3 class="product-of-week__name">Вязаные корзинки</h3>
-            <h2 class="product-of-week__category">Товар недели</h2>
+            <div class="product-of-week__container-title">
+              <h3 class="product-of-week__name">Вязаные корзинки</h3>
+              <h2 class="product-of-week__category">Товар недели</h2>
+            </div>
             <p class="product-of-week__description">
               Экологически чистая пряжа, ручная работа. Доступы в шести расцветках, и трех размерах.
             </p>
@@ -163,8 +170,9 @@
       </section>
     </div>
   </main>
-  <div class="body-container">
-    <footer class="footer">
+
+  <footer class="footer">
+    <div class="body-container">
       <div class="footer__social-links">
         <i class="footer__instagram">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -211,9 +219,8 @@
           />
         </svg>
       </div>
-    </footer>
-  </div>
-
+    </div>
+  </footer>
   <div class="modal-container">
     <div class="modal">
       <p class="maodal__title">Добавить в корзину</p>
