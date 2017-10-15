@@ -5,7 +5,6 @@
 .contacts__name{
   .clear-block;
   margin-bottom: 42px;
-  padding: 0 30px;
 
   font-size: 18px;
   line-height: 30px;
@@ -19,7 +18,10 @@
 
   font-size: 15px;
   line-height: 30px;
+}
 
+.contacts__contact-container-name{
+  margin-bottom: 0;
 }
 
 .contacts__sort{
@@ -72,15 +74,44 @@
   }
 
   .contacts__adress{
-    padding-right: 50px;
-  }
-
-  .contacts__sort{
-    padding-left: 50px;
+    width: 225px;
   }
 
   .contacts__contact-container:first-child{
     padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .contacts__contact-container-button{
+    width: 334px;
+    margin-left:  auto;
+    margin-right: auto;
+  }
+
+  .contacts__contact-container button{
+    margin-left: auto;
+  }
+
+  .contacts__contact-container-name{
+    width: 768px;
+    padding: 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__contact-container-email,
+  .contacts__contact-container-adress{
+    width: 384px;
+  }
+
+  .contacts__contact-container-email{
+    padding-left: 50px;
+    margin-left: auto;
+  }
+
+  .contacts__contact-container-adress{
+    padding-right: 50px;
+    margin-right: auto;
   }
 }
 
@@ -93,26 +124,55 @@
   .contacts__name{
     order: 1;
     width: 350px;
+    margin-left: auto;
+    padding: 0;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .contacts__map{
     width: 525px;
+    margin-bottom: 0;
+    margin-right: auto;
   }
 
   .contacts__contact-container{
     margin: 0;
   }
 
+  .contacts__contact-container-name{
+    width: 525px;
+    margin-left: auto;
+    margin-top: 80px;
+  }
+
   .contacts__contact-container-email{
     order: 2;
+    width: 525px;
+    margin-left: auto;
+    margin-bottom: 38px;
+    padding-left: 175px;
   }
 
   .contacts__contact-container-adress{
     order: 3;
+    width: 525px;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding-left: 175px;
   }
 
   .contacts__contact-container-button{
     order: 4;
+    width: 525px;
+
+    padding-left: 175px;
+    margin-left: auto;
+  }
+
+  .contacts__contact-container-button button{
+    margin-left: 0;
   }
 
   .contacts__map{
