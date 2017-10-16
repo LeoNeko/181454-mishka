@@ -1,6 +1,27 @@
-.body{
-  width: 320px;
-  margin: auto;
+.body {
+  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
+  margin: 0;
+}
 
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
+.body-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .body-container {
+    width: @media-screen-tablet;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .body-container {
+    width: @media-screen-desktop;
+  }
+}
+
+.body__grey-color {
+  @media screen and (min-width: @media-screen-tablet) {
+    background-color: @background-grey;
+  }
 }

@@ -1,43 +1,132 @@
-.products-item{
-
-
+.order-header {
+  padding: 76px 0;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
 }
 
-.products-item__figure{
+.order-header__name {
+  .clear-block;
+  text-align: center;
+}
+
+.products-item__figure {
   display: block;
   .clear-block;
   width: 260px;
   height: 195px;
 }
 
-.products-item__name{
+.products-item__name {
   .clear-block;
   margin-bottom: 17px;
-
   font-size: 17px;
   line-height: 24px;
 }
 
-.products-item__description{
+.products-item__description {
   .clear-block;
   padding-bottom: 17px;
   margin-bottom: 27px;
-
   font-size: 13px;
   line-height: 30px;
-
   border-bottom: 1px solid #c7c7c7;
 }
 
-.products-item__price{
+.products-item__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
 }
 
-.products-item__container{
+.products-item__container {
   padding: 30px 27px;
   margin-bottom: 30px;
-
   border: 1px solid @background-light_grey;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .order-header {
+    padding-top: 106px;
+    margin-top: -72px;
+    margin-bottom: 30px;
+    background-color: #f1f1f1;
+  }
+
+  .order-header__name {
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .products-item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  .products-item__container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 0;
+    min-height: 272px;
+  }
+
+  .products-item__description {
+    margin-bottom: auto;
+    border: 0;
+  }
+
+  .products-item-container {
+    padding-top: 27px;
+    border-top: 1px solid @background-light_grey;
+  }
+
+  .products-item__price {
+    font-size: 17px;
+  }
+
+  .products-item__name {
+    font-size: 20px;
+  }
+
+  .products-item__description,
+  .production-process__description {
+    font-size: 15px;
+  }
+
+  .products-item__figure {
+    width: 334px;
+    min-height: 334px;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .order-header {
+    padding-bottom: 97px;
+    border-top: 2px solid @background-light_grey;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .products-item {
+    flex-direction: column;
+  }
+
+  .products-item__container {
+    max-width: 260px;
+    min-height: auto;
+  }
+
+  .products-item__figure {
+    width: 316px;
+    height: 462px;
+  }
+
+  .products-item__description {
+    margin-bottom: 0;
+  }
 }

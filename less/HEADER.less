@@ -1,26 +1,238 @@
-.header{
-
-}
-
-.header-list{
+.header-list {
   .clear-block;
 }
 
-.header-list__item{
-  list-style-type: none;
+.header__humburger {
+  position: absolute;
+  top: 29px;
+  right: 30px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/icon-menu-open.svg") no-repeat center;
+  border: 0;
+}
 
+.header__humburger-hidden {
+  background: url("../img/icon-menu-close.svg") no-repeat center;
+}
+
+.header__image {
+  position: relative;
+  padding: 22px 0;
+  text-align: center;
   border-bottom: 1px solid @background-grey;
 }
 
-.header-list__item a{
+.header-list__item {
+  list-style-type: none;
+  border-bottom: 1px solid @background-grey;
+}
+
+.header-list__item a {
+  position: relative;
   display: block;
   .padding-main;
+  padding-left: 75px;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: black;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   text-decoration: none;
+}
+
+.header-list__item--search a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-search.svg") no-repeat;
+}
+
+.header-list__item--basket a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-cart.svg") no-repeat;
+}
+
+.header-list__extra {
+  flex-grow: 1;
+  order: 4;
+}
+
+.header-list__extra .header-list__item {
+  border: 0;
+}
+
+.header-list__item--desctop-only,
+.header-list__item--tablet {
+  display: none;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+
+  .header-list__category {
+    order: 3;
+    padding-left: 50px;
+  }
+
+  .header-list__category a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 0;
+    padding-right: 36px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .header-list__category .header-list__item {
+    border: 0;
+  }
+
+  .header__humburger {
+    display: none;
+  }
+
+  .header__image {
+    width: 312px;
+    padding-left: 50px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid @background-grey;
+  }
+
+  .header-list__tecnical {
+    order: 2;
+  }
+
+  .search-info {
+    display: none;
+  }
+
+  .header-list {
+    display: flex;
+  }
+
+  .header-list__item--search a {
+    width: 20px;
+    padding: 44px 31px;
+    border-right: 1px solid @background-grey;
+    border-left: 1px solid @background-grey;
+  }
+
+  .header-list__item--search a::before {
+    top: 34px;
+    left: 31px;
+  }
+
+  .header-list__item--basket a {
+    min-width: 188px;
+    padding-left: 84px;
+    padding-right: 50;
+    text-align: right;
+  }
+
+  .header-list__item--basket a::before {
+    top: 34px;
+    left: 31px;
+  }
+
+  .header-list__item--tablet {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header-list__item--tablet a {
+    padding-right: 50px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .header {
+    padding: 0 50px;
+  }
+
+  .header-list {
+    flex-wrap: wrap;
+  }
+
+  .header__image {
+    flex-grow: 1;
+    order: 2;
+    padding-left: 0;
+    width: 268px;
+  }
+
+  .header__image img {
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .header-list__category {
+    padding-left: 0;
+    max-width: 376px;
+    order: 1;
+    background: #ffffff;
+  }
+
+  .header__image,
+  .header-list__item {
+    border-bottom: none;
+  }
+
+  .header-list__category a {
+    flex-grow: 1;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .header-list__tecnical {
+    order: 3;
+  }
+
+  .header-list__item--basket a {
+    padding-right: 0;
+  }
+
+  .header-list__extra {
+    order: 4;
+  }
+
+  .header-list__item--desctop-only a {
+    padding: 24px 0;
+    padding-right: 60px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .header-list__item--tablet a {
+    padding-right: 0;
+  }
+
+  .header-list__item--desctop-only {
+    display: block;
+  }
 }

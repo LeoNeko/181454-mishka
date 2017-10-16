@@ -1,15 +1,46 @@
-.about-us{
+.about-us {
+  .clear-block;
   .padding-main;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
 }
 
-.about-us__name{
+.advantage__figure {
+  fill: @light-green;
+}
+
+.about-us__name {
+  width: 100%;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
 }
 
-.advantage__name{
+.advantage__name {
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .about-us {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage {
+    width: 334px;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .about-us {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .advantage {
+    width: 350px;
+  }
 }

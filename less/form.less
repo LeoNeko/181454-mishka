@@ -1,44 +1,155 @@
-.form-header{
+.form-header {
   .clear-block;
 }
 
-.form-header__name{
+.form-header__name {
   .clear-block;
   padding: 77px 44px;
-
   text-align: center;
-
   background-color: #f1f1f1;
 }
 
-.form-container{
+.form-container {
   .padding-main;
 }
 
-.form-header__description{
+.form-header__description {
   .clear-block;
-
   font-size: 13px;
   line-height: 24px;
-
   padding: 30px;
 }
 
-.form__name{
-
-  color: @light-green;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-}
-
-.form__label{
+.form__label {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
 }
 
-.form__necessarily{
+.form__necessarily {
   font-size: 14px;
   line-height: 16px;
+}
+
+.from__fieldset,
+.form__name {
+  .clear-block;
+  border: none;
+}
+
+.from__fieldset {
+  padding: 27px 0;
+}
+
+.form__name {
+  position: relative;
+  margin-bottom: 9px;
+  color: @light-green;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.form__name span {
+  position: relative;
+  display: block;
+  max-width: 62px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.form__name-email span {
+  max-width: 81px;
+}
+
+.form__name::after {
+  content: "";
+  width: 260px;
+  display: block;
+  position: relative;
+  top: -8px;
+  border-bottom: 1px solid @light-green;
+  z-index: 995;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container input[type="text"] {
+  width: 227px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-right: 33px;
+  color: grey;
+  font-size: 13px;
+  border: 0;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .form-header__name {
+    margin-top: -72px;
+  }
+
+  .body__grey-color .form__name {
+    background-color: @background-grey;
+  }
+
+  .body__grey-color span {
+    background-color: @background-grey;
+  }
+
+  .form-header__description {
+    padding: 70px 50px;
+    padding-bottom: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form-container {
+    padding: 0;
+  }
+
+  .form__name::after {
+    display: none;
+  }
+
+  .from__fieldset {
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+    padding-top: 67px;
+    padding-bottom: 48px;
+  }
+
+  .form__name {
+    flex-basis: 167px;
+  }
+
+  .form__button-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+  }
+
+  .button {
+    order: 1;
+    padding-left: 28px;
+    padding-right: 28px;
+    width: 230px;
+    margin-right: auto;
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  .form__necessarily {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

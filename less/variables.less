@@ -1,17 +1,39 @@
-
-
 @light-green: #63d1bb;
 @dark-green: #56c3b2;
 @dark-grey: #444444;
 @background-grey: #f1f1f1;
 @background-light_grey: #ededed;
 
-.clear-block{
+@media-screen-tablet: 768px;
+@media-screen-desktop: 1150px;
+
+.clear-block {
   margin: 0;
   padding: 0;
 }
 
-.padding-main{
+.padding-main {
   padding-right: 30px;
   padding-left: 30px;
+
+  @media screen and (min-width: @media-screen-tablet) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  /*
+  @media screen and (min-width: @media-screen-desktop) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }*/
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
