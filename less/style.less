@@ -1,62 +1,56 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensans.woff') format('woff');
-  src: url('../fonts/opensans.woff2') format('woff2');
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensansbold.woff') format('woff');
-  src: url('../fonts/opensansbold.woff2') format('woff2');
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
-@viewport{
+@viewport {
   width: device-width;
-  zoom: 1.0;
+  zoom: "1.0";
 }
 
-.products{
+.products {
   .padding-main;
 }
 
-.button{
+.button {
   display: block;
   width: 100%;
-
   color: @dark-grey;
-
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
-  background-color: #FFF;
+  background-color: #ffffff;
   border: 2px solid @dark-grey;
   padding: 17px 49px;
 }
 
-@import 'variables.less';
-@import 'body';
-@import 'HEADER.less';
-@import 'header-index.less';
-@import 'product-categories.less';
-@import 'product-of-week.less';
-@import 'about-us.less';
-@import 'review.less';
-@import 'contacts.less';
-@import 'footer.less';
-@import 'modal.less';
-@import 'production-process.less';
-
-
-/****** Catalog *****/
-
-@import 'products-item.less';
+@import "variables.less";
+@import "body";
+@import "HEADER.less";
+@import "header-index.less";
+@import "product-categories.less";
+@import "product-of-week.less";
+@import "about-us.less";
+@import "review.less";
+@import "contacts.less";
+@import "footer.less";
+@import "modal.less";
+@import "production-process.less";
 
 /****** Catalog *****/
 
-@import 'form.less';
+@import "products-item.less";
+@import "form.less";
