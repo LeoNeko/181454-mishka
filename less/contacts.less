@@ -36,7 +36,6 @@
 }
 
 @media screen and (min-width: @media-screen-tablet) {
-
   .contacts {
     display: flex;
     flex-wrap: wrap;
@@ -47,11 +46,6 @@
     margin-bottom: 55px;
   }
 
-  .contacts__contact-container {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .contacts__name {
     width: 100%;
     padding: 0 50px;
@@ -60,8 +54,9 @@
   }
 
   .contacts__contact-container {
+    margin-right: auto;
+    margin-left: auto;
     padding: 0;
-    margin: 0;
     margin-bottom: 60px;
     font-size: 17px;
   }
@@ -109,7 +104,6 @@
 }
 
 @media screen and (min-width: @media-screen-desktop) {
-
   .contacts {
     flex-direction: column;
     height: 458px;
@@ -125,6 +119,7 @@
   }
 
   .contacts__map {
+    order: 5;
     width: 525px;
     margin-bottom: 0;
     margin-right: auto;
@@ -166,9 +161,5 @@
 
   .contacts__contact-container-button button {
     margin-left: 0;
-  }
-
-  .contacts__map {
-    order: 5;
   }
 }
