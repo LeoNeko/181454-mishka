@@ -15,10 +15,22 @@
 
 .production-process__name {
   .clear-block;
-  margin-bottom: 26px;
+  position: relative;
+  padding-left: 50px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  box-sizing: border-box;
+}
+
+.production-process__name::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 40px;
+  height: 26px;
+  background: url("../img/icon-video.svg") no-repeat;
 }
 
 .production-process__description {
@@ -29,8 +41,18 @@
 }
 
 .production-process__button {
+  padding-left: 28px;
+  padding-right: 28px;
+  width: 100%;
+  margin-right: auto;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border: 2px solid @dark-grey;
+  background-color: #ffffff;
 }
 
 .production-process__video img {
@@ -51,7 +73,12 @@
   }
 
   .production-process__name {
+    padding-top: 10px;
     font-size: 20px;
+  }
+
+  .production-process__name::before {
+    top: 5px;
   }
 }
 
@@ -63,11 +90,21 @@
     height: 455px;
   }
 
+  .production-process__name {
+    padding-left: 0;
+    padding-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .production-process__name::before {
+    top: 45px;
+  }
+
   .production-process__container {
     padding: 0;
     padding-left: 80px;
     padding-right: 57px;
-    width: 280px;
+    width: 230px;
   }
 
   .production-process__video img {

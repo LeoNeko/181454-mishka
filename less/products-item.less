@@ -1,3 +1,7 @@
+.products {
+  margin-bottom: 60px;
+}
+
 .order-header {
   padding: 76px 0;
   margin-bottom: 30px;
@@ -33,6 +37,7 @@
 }
 
 .products-item__price {
+  display: block;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
@@ -42,6 +47,19 @@
   padding: 30px 27px;
   margin-bottom: 30px;
   border: 1px solid @background-light_grey;
+}
+
+.products-item-container {
+  display: flex;
+}
+
+.products-item__basket {
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  margin-left: auto;
+  background: url("../img/icon-cart.svg") no-repeat;
+  fill: #c7c7c7;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
