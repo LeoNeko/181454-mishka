@@ -64,108 +64,110 @@
         </p>
       </div>
     </section>
-    <div class="body-container">
-      <form class="from" method="post" action="https://echo.htmlacademy.ru">
-        <section class="form-container">
-          <div class="body-container">
-            <div class="from__fieldset">
-              <h3 class="form__name">
-                <span>Тип</span>
-              </h3>
-              <div class="form__container">
-                <input id="Accessories" class="form__radio" type="radio" name="radio" value="interior" checked>
-                <label class="form__label" for="Accessories">Аксессуары для интерьера</label>
-                <input id="Toys" class="form__radio" type="radio" name="radio">
-                <label class="form__label" value="Toys" for="Toys">Детская игрушка</label>
-              </div>
-            </div>
-          </div>
-          <div class="body__grey-color">
-            <div class="body-container">
-              <div class="from__fieldset">
-                <h3 class="form__name">
-                  <span>Цвет</span>
-                </h3>
-                <div class="form__container">
-                  <input id="white" class="form__checkbox" type="checkbox" name="Белый" checked>
-                  <label for="white" class="form__label">Белый</label>
-                  <input id="grey" class="form__checkbox" type="checkbox" name="Серый" checked>
-                  <label for="grey" class="form__label">Серый</label>
-                  <input id="tiffany" class="form__checkbox" type="checkbox" name="Тиффани">
-                  <label for="tiffany" class="form__label">«Тиффани»</label>
-                  <input id="black" class="form__checkbox" type="checkbox" name="Черный">
-                  <label for="black" class="form__label">Черный</label>
-                  <input id="pink" class="form__checkbox" type="checkbox" name="Розовый">
-                  <label for="pink" class="form__label">Розовый</label>
-                  <input id="orange" class="form__checkbox" type="checkbox" name="Оранжевый">
-                  <label for="orange" class="form__label">Оранжевый</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="body-container">
-            <div class="from__fieldset">
-              <h3 class="form__name">
-                <span>ФИО</span>
-              </h3>
-              <div class="form__container">
-                <div class="form__container">
-                  <label for="name" class="form__label form__label-fio">Имя:</label>
-                  <input id="name" class="form__text" type="text" name="Имя" placeholder="Введите ваше имя*" required>
-                </div>
-                <div class="form__container">
-                  <label for="secondname" class="form__label form__label-fio">Фамилия:</label>
-                  <input id="secondname" class="form__text" type="text" name="Фамилия" placeholder="Укажите фамилию*" required>
-                </div>
-                <div class="form__container">
-                  <label for="patronymic" class="form__label form__label-fio">Отчество:</label>
 
-                  <input id="patronymic" class="form__text" type="text" name="Отчество" placeholder="Отчество, если желаете">
-                </div>
-              </div>
+    <form class="from" method="post" action="https://echo.htmlacademy.ru">
+      <section class="form-container">
+        <div class="body-container">
+          <div class="from__fieldset">
+            <h3 class="form__name">
+              <span>Тип</span>
+            </h3>
+            <div class="form__container">
+              <input id="Accessories" class="form__radio" type="radio" name="radio" value="interior" checked>
+              <label class="form__label" for="Accessories">Аксессуары для интерьера</label>
+              <input id="Toys" class="form__radio" type="radio" name="radio">
+              <label class="form__label" value="Toys" for="Toys">Детская игрушка</label>
             </div>
           </div>
-          <div class="body__grey-color">
-            <div class="body-container">
-              <div class="from__fieldset">
-                <h3 class="form__name">
-                  <span>Тел</span>
-                </h3>
-                <div class="form__container">
-                  <label class="form__label" for=""></label>
-                  <input class="form__tel" type="text" name="Тел" placeholder="+7 ХХХ ХХ ХХ*">
-                </div>
-              </div>
-              <div class="from__fieldset">
-                <h3 class="form__name form__name-email">
-                  <span>E-Mail</span>
-                </h3>
-                <div class="form__container">
-                  <label class="form__label" for=""></label>
-                  <input class="form__email" type="text" name="Тел" placeholder="Ваш Email*">
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="body__grey-color">
           <div class="body-container">
             <div class="from__fieldset">
               <h3 class="form__name">
-                <span>Доп</span>
+                <span>Цвет</span>
               </h3>
-              <div class="form__container">
-                <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <div class="form__container form__container--colors-desctop">
+                <input id="white" class="form__checkbox" type="checkbox" name="Белый" checked>
+                <label for="white" class="form__label form__label-color">Белый</label>
+                <input id="grey" class="form__checkbox" type="checkbox" name="Серый" checked>
+                <label for="grey" class="form__label form__label-color">Серый</label>
+                <input id="tiffany" class="form__checkbox" type="checkbox" name="Тиффани">
+                <label for="tiffany" class="form__label form__label-color">«Тиффани»</label>
+                <input id="black" class="form__checkbox" type="checkbox" name="Черный">
+                <label for="black" class="form__label form__label-color">Черный</label>
+                <input id="pink" class="form__checkbox" type="checkbox" name="Розовый">
+                <label for="pink" class="form__label form__label-color">Розовый</label>
+                <input id="orange" class="form__checkbox" type="checkbox" name="Оранжевый">
+                <label for="orange" class="form__label form__label-color">Оранжевый</label>
               </div>
             </div>
-            <div class="form__button-container">
-              <p class="form__necessarily">*Поля обязательные для заполнения</p>
-              <button class="button">Отправить заказ</button>
+          </div>
+        </div>
+        <div class="body-container">
+          <div class="from__fieldset">
+            <h3 class="form__name">
+              <span>ФИО</span>
+            </h3>
+            <div class="form__container">
+              <div class="form__container">
+                <label for="name" class="form__label form__label-fio">Имя:</label>
+                <input id="name" class="form__text" type="text" name="Имя" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="form__container">
+                <label for="secondname" class="form__label form__label-fio">Фамилия:</label>
+                <input id="secondname" class="form__text" type="text" name="Фамилия" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="form__container">
+                <label for="patronymic" class="form__label form__label-fio">Отчество:</label>
+                <input id="patronymic" class="form__text" type="text" name="Отчество" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </div>
-      </form>
-      </section>
+        </div>
+        <div class="body__grey-color">
+          <div class="body-container">
+            <div class="from__fieldset from__fieldset-contacts">
+              <h3 class="form__name">
+                <span>Тел</span>
+              </h3>
+              <div class="form__container">
+                <input class="form__tel" type="text" name="Тел" placeholder="+7 ХХХ ХХ ХХ*">
+              </div>
+            </div>
+            <div class="from__fieldset from__fieldset-contacts">
+              <h3 class="form__name form__name-email">
+                <span>E-Mail</span>
+              </h3>
+              <div class="form__container">
+                <input class="form__email" type="text" name="Тел" placeholder="Ваш Email*">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body-container">
+          <div class="from__fieldset">
+            <h3 class="form__name">
+              <span>Доп</span>
+            </h3>
+            <div class="form__container">
+              <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
+          <div class="form__button-container">
+            <p class="form__necessarily">*Поля обязательные для заполнения</p>
+            <button class="button">Отправить заказ</button>
+          </div>
+        </div>
+    </form>
+    </section>
   </main>
   <footer class="footer">
-    <div class="body-container">
+    <div class="body-container body-container--footer">
+      <div class="footer__image">
+        <a href="index.html">
+          <img src="../img/logo-mobile.svg" width="" height="" />
+        </a>
+      </div>
       <div class="footer__social-links">
         <i class="footer__instagram"></i>
         <i class="footer__facebook"></i>
@@ -175,7 +177,6 @@
         <p class="footer__autor">Разработано</p>
         <svg></svg>
       </div>
-    </div>
   </footer>
 </body>
 
