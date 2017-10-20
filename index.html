@@ -199,11 +199,16 @@
   </main>
 
   <footer class="footer">
-    <div class="body-container">
+    <div class="body-container body-container--footer">
+      <div class="footer__image">
+        <a href="index.html">
+          <img src="../img/logo-mobile.svg" width="" height="" />
+        </a>
+      </div>
       <div class="footer__social-links">
         <i class="footer__instagram">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334"
+          <svg class="footer__icons" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="22px" height="22px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334"
             xml:space="preserve">
             <g id="instagram">
               <g>
@@ -214,7 +219,7 @@
           </svg>
         </i>
         <i class="footer__facebook">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="footer__icons" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718"
             xml:space="preserve">
             <g id="facebook">
@@ -226,7 +231,7 @@
           </svg>
         </i>
         <i class="footer__twitter">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="footer__icons" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168"
             xml:space="preserve">
             <g id="twitter">
@@ -252,12 +257,21 @@
     <div class="modal">
       <p class="maodal__title">Добавить в корзину</p>
       <p class="modal__description">Выберите размер:</p>
-      <div class="modal__container">
-        <div class="modal__size">S</div>
-        <div class="modal__size">М</div>
-        <div class="modal__size">L</div>
-      </div>
-      <button class="modal__send">Добавить</button>
+      <form class="modal__container">
+        <div class="modal__size">
+          <input type="radio" class="modal__input-size" name="size" value="s" id="s-size" checked>
+          <label class="size-select__label" for="s-size">S</label>
+        </div>
+        <div class="modal__size">
+            <input type="radio" class="modal__input-size" name="size" value="m" id="m-size">
+            <label class="size-select__label" for="m-size">M</label>
+        </div>
+        <div class="modal__size">
+            <input type="radio" class="modal__input-size" name="size" value="l" id="l-size">
+            <label class="size-select__label" for="l-size">L</label>
+        </div>
+        <button class="modal__send">Добавить</button>
+      </form>
     </div>
   </div>
 </body>
