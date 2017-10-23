@@ -3,7 +3,7 @@
   .padding-main;
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
 }
 
 .advantage__figure {
@@ -11,10 +11,66 @@
 }
 
 .about-us__name {
+  .clear-block;
+  margin-top: 36px;
+  margin-bottom: 29px;
   width: 100%;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
+}
+
+.advantage {
+  margin-bottom: 13px;
+}
+
+.advantage svg {
+  fill: @light-green;
+}
+
+.icon-feature-flower {
+  position: relative;
+  left: 9px;
+}
+
+.icon-feature-money + .advantage__name {
+  margin-top: 22px;
+}
+
+.icon-feature-heart {
+  position: relative;
+  left: 7px;
+  top: 5px;
+}
+
+.icon-feature-heart + .advantage__name {
+  margin-top: 22px;
+}
+
+.icon-feature-ball {
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+
+.icon-feature-rocket {
+  position: relative;
+  left: -4px;
+  top: 3px;
+}
+
+.icon-feature-rocket + .advantage__name {
+  margin-top: 26px;
+}
+
+.icon-feature-gift {
+  position: relative;
+  left: 4px;
+  top: 2px;
+}
+
+.icon-feature-gift + .advantage__name {
+  margin-top: 19px;
 }
 
 .advantage__name {
@@ -25,12 +81,56 @@
 
 @media screen and (min-width: @media-screen-tablet) {
   .about-us {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 600px;
+    margin-bottom: 47px;
+  }
+
+  .about-us .advantage:nth-child(5) {
+    margin-top: 152px;
   }
 
   .advantage {
     width: 334px;
+  }
+
+  .advantage__name {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__name {
+    width: 50%;
+    margin-top: 56px;
+    margin-bottom: 48px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .icon-feature-flower + .advantage__name {
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+
+  .icon-feature-money + .advantage__name {
+    margin-top: 22px;
+    margin-bottom: 45px;
+  }
+
+  .icon-feature-ball {
+    left: 3px;
+    top: 6px;
+  }
+
+  .icon-feature-ball + .advantage__name {
+    margin-top: 22px;
+    margin-bottom: 45px;
+  }
+
+  .icon-feature-rocket + .advantage__name {
+    margin-top: 24px;
+    margin-bottom: 45px;
   }
 }
 

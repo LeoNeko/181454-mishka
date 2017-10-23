@@ -1,5 +1,10 @@
 .review {
   .padding-main;
+  margin-bottom: 87px;
+}
+
+.review .button {
+  padding: 14px 49px;
 }
 
 .review__block-title {
@@ -11,7 +16,7 @@
 
 .rewiew__description {
   .clear-block;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 30px;
 }
@@ -35,13 +40,13 @@
 
 .review__container-button {
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .review__left-slide,
 .review__right-slide {
   width: 50%;
-  height: 50px;
+  height: 52px;
   font-size: 0;
   fill: #000000;
   background-color: transparent;
@@ -65,13 +70,25 @@
 .contacts__map {
   width: 100%;
   height: 457px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
+}
+
+.contacts__contact-container.contacts__contact-container-email {
+  margin-bottom: 29px;
+}
+
+.contacts__contact-container.contacts__contact-container-adress {
+  margin-bottom: 37px;
+}
+
+.contacts__contact-container-button .button {
+  padding: 14px 49px;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
   .review__block-title {
     order: 1;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     margin-right: auto;
     font-size: 43px;
     line-height: 50px;
@@ -81,9 +98,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 457px;
-    padding-top: 79px;
+    min-height: 469px;
+    padding-top: 77px;
     padding-right: 0;
+    margin-bottom: 133px;
     background: url("../img/review@1x.jpg") no-repeat;
     box-sizing: border-box;
   }
@@ -92,11 +110,14 @@
     order: 2;
     height: 52px;
     width: 175px;
-    margin-right: 0;
+    margin-right: 50px;
+    padding: 18px 38px;
   }
 
   .rewiew__description {
     order: 3;
+    width: 645px;
+    margin-bottom: 30px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -108,6 +129,17 @@
 
   .review__container-button {
     order: 5;
+    margin-right: 50px;
+  }
+
+  .review__fio {
+    margin-bottom: 5px;
+  }
+
+  .review__left-slide,
+  .review__right-slide {
+    padding: 17px 19px;
+    border: 0;
   }
 }
 

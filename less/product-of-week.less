@@ -1,6 +1,6 @@
 .product-of-week__container {
   .padding-main;
-  padding-top: 33px;
+  padding-top: 27px;
   padding-bottom: 33px;
 }
 
@@ -15,7 +15,7 @@
 .product-of-week__category {
   .clear-block;
 
-  margin-bottom: 33px;
+  margin-bottom: 21px;
 
   color: @light-green;
   font-size: 17px;
@@ -27,7 +27,7 @@
 .product-of-week__description {
   .clear-block;
 
-  margin-bottom: 33px;
+  margin-bottom: 16px;
 
   font-size: 15px;
   line-height: 24px;
@@ -48,7 +48,7 @@
 }
 
 .table-properties__td {
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .table-properties__td:first-child {
@@ -57,8 +57,8 @@
 
 .product-of-week__price {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 28px;
+  padding-top: 24px;
+  padding-bottom: 26px;
   text-align: center;
 
   color: @dark-grey;
@@ -68,6 +68,8 @@
 }
 
 .product-of-week__button {
+  padding-bottom: 14px;
+  padding-top: 14px;
   font-size: 17px;
 }
 
@@ -80,10 +82,10 @@
   .product-of-week__container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 63px;
+    padding-top: 45px;
     position: relative;
     flex-direction: column;
-    height: 658px;
+    height: 540px;
   }
 
   .product-categories {
@@ -94,6 +96,7 @@
   }
 
   .product-of-week__name {
+    left: 46px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -111,10 +114,12 @@
 
   .product-of-week__category {
     width: 75px;
-    top: 75px;
+    top: 57px;
     right: 78px;
     margin-bottom: 0;
 
+    font-size: 17px;
+    line-height: 17px;
     text-align: center;
   }
 
@@ -124,7 +129,7 @@
   }
 
   .product-of-week__description {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -132,7 +137,7 @@
   .product-of-week__container-description {
     order: 1;
     padding-right: 44px;
-    width: 290px;
+    width: 331px;
 
     box-sizing: border-box;
   }
@@ -140,14 +145,26 @@
   .product-of-week__container-price {
     order: 2;
     padding-right: 44px;
-    width: 290px;
+    width: 327px;
 
     box-sizing: border-box;
+  }
+
+  .product-of-week__container-price .button {
+    width: 290px;
+    line-height: 20px;
   }
 
   .table-properties__td {
     padding: 10px 0;
     line-height: 20px;
+  }
+
+  .product-of-week__price {
+    padding-top: 27px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

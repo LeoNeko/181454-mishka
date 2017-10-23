@@ -1,16 +1,25 @@
 {
   "name": "mishka",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.1.x",
     "browser-sync": "2.18.x",
+    "del": "^3.0.0",
     "gulp": "3.9.x",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-less": "3.3.x",
     "gulp-plumber": "1.1.x",
     "gulp-postcss": "7.0.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-webp": "^2.3.0",
+    "posthtml-include": "^1.1.0",
+    "run-sequence": "^2.2.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -18,8 +27,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'less/**/*.less' --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
@@ -36,5 +45,24 @@
   ],
   "engines": {
     "node": "8.2"
-  }
+  },
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-webp": "^2.3.0",
+    "posthtml-include": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoNeko/181454-mishka.git"
+  },
+  "author": "Anton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoNeko/181454-mishka/issues"
+  },
+  "homepage": "https://github.com/LeoNeko/181454-mishka#readme"
 }

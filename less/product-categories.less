@@ -10,8 +10,8 @@
 
 .product-categories__item {
   .padding-main;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   color: #ffffff;
 }
 
@@ -40,7 +40,7 @@
 .product-categories__item--interior::after {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 22px;
   right: 37px;
   width: 40px;
   height: 62px;
@@ -50,8 +50,8 @@
 .product-categories__item--toys::after {
   content: "";
   position: absolute;
-  top: 27px;
-  right: 37px;
+  top: 22px;
+  right: 26px;
   width: 60px;
   height: 60px;
   background: url("../img/icon-toy.svg") no-repeat center;
@@ -65,5 +65,33 @@
 
   .header-index {
     border-top: 1px solid #f1f1f1;
+  }
+
+  .product-categories__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .product-categories__item--interior,
+  .product-categories__item--toys {
+    padding-left: 34px;
+  }
+
+  .product-categories__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .product-categories__item--interior::after {
+    top: 30px;
+  }
+
+  .product-categories__item--toys::after {
+    top: 30px;
+    right: 37px;
+  }
+
+  .product-of-week__figure {
+    padding-top: 8px;
   }
 }
