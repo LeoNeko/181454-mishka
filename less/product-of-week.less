@@ -88,6 +88,19 @@
     height: 540px;
   }
 
+  .product-of-week__container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 16px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 16px;
+  }
+
   .product-categories {
     padding-left: 50px;
     padding-right: 50px;
@@ -169,8 +182,14 @@
 }
 
 @media screen and (min-width: @media-screen-desktop) {
+  .product-of-week__container {
+    height: 666px;
+    margin-bottom: 100px;
+  }
+
   .product-of-week__figure {
     margin: 0;
+    padding-top: 26px;
     max-width: 525px;
   }
 
@@ -188,18 +207,42 @@
     margin-left: auto;
   }
 
+  .product-of-week__price {
+    margin-top: 53px;
+  }
+
+  .product-of-week__container-price .button {
+    margin-right: 0;
+  }
+
+
+  .product-of-week__description {
+    margin-top: 184px;
+    margin-bottom: 47px;
+  }
+
   .table-properties__td {
-    padding: 13px 0;
+    padding: 10px 0;
     line-height: 20px;
   }
 
   .product-of-week__name {
+    top: 122px;
     left: 220px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .product-of-week__category {
-    left: 80px;
+    left: 94px;
+    top: 139px;
+  }
+
+  .product-of-week__container::after {
+    left: auto;
+    width: 1050px;
+    bottom: -57px;
+    height: 23px;
+    background-size: 1050px 23px;
   }
 }

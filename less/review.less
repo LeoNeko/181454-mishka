@@ -96,6 +96,7 @@
 
   .review {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 469px;
@@ -104,6 +105,19 @@
     margin-bottom: 133px;
     background: url("../img/review@1x.jpg") no-repeat;
     box-sizing: border-box;
+  }
+
+  .review::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -71px;
+    left: 0;
+    height: 16px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 16px;
   }
 
   .review .button {
@@ -145,13 +159,33 @@
 
 @media screen and (min-width: @media-screen-desktop) {
   .review {
+    padding-top: 70px;
     padding-left: 175px;
     margin-right: 50px;
     margin-left: 50px;
   }
 
+  .review .button {
+    margin-top: 8px;
+    margin-right: 0;
+  }
+
   .review__block-title {
+    margin-bottom: 8px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .rewiew__description {
+    width: 770px;
+  }
+
+  .review__container-button {
+    margin-right: 0;
+  }
+
+  .review::after {
+    height: 23px;
+    background-size: 1150px 23px;
   }
 }

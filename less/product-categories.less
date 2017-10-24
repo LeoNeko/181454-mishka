@@ -63,6 +63,24 @@
     padding: 0 50px;
   }
 
+  .product-categories {
+    position: relative;
+    padding: 0;
+  }
+
+  .product-categories::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    height: 23px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+  }
+
   .header-index {
     border-top: 1px solid #f1f1f1;
   }
@@ -93,5 +111,13 @@
 
   .product-of-week__figure {
     padding-top: 8px;
+  }
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .product-categories::after {
+    bottom: -16px;
+    height: 34px;
+    background-size: 1150px 34px;
   }
 }

@@ -178,18 +178,19 @@
     flex-grow: 1;
     order: 2;
     padding-left: 0;
+    padding-top: 9px;
+    padding-bottom: 5px;
     text-align: center;
-    width: 268px;
+    width: 150px;
   }
 
   .header__image img {
     display: block;
-    margin: auto;
   }
 
   .header-list__category {
     padding-left: 0;
-    max-width: 376px;
+    max-width: 450px;
     order: 1;
     background: #ffffff;
   }
@@ -197,6 +198,18 @@
   .header__image,
   .header-list__item {
     border-bottom: none;
+  }
+
+  .header-list__category .header-list__item {
+    margin-right: 36px;
+  }
+
+  .header-list__tecnical .header-list__item {
+    margin-right: 0;
+  }
+
+  .header-list__category .header-list__item:first-child {
+    border-right: 1px solid #f9f9f9;
   }
 
   .header-list__category a {
@@ -220,7 +233,7 @@
   }
 
   .header-list__item--desctop-only a {
-    padding: 24px 0;
+    padding: 22px 0;
     padding-right: 60px;
     font-size: 15px;
     line-height: 24px;

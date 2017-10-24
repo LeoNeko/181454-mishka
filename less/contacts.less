@@ -43,13 +43,26 @@
 
   .contacts__map {
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .contacts__name {
     width: 100%;
     font-size: 43px;
     line-height: 50px;
+
+    margin-bottom: 49px;
+  }
+
+  .contacts__name::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 80px;
+    top: -15px;
+    right: 54px;
+    background: url("../img/icon-flag.svg") no-repeat;
   }
 
   .contacts__contact-container {
@@ -80,32 +93,42 @@
   }
 
   .contacts__contact-container-name {
+    position: relative;
     width: 768px;
     padding: 0 50px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .contacts__contact-container-email,
-  .contacts__contact-container-adress {
+  .contacts__contact-container.contacts__contact-container-email,
+  .contacts__contact-container.contacts__contact-container-adress {
     width: 384px;
+    margin-bottom: 55px;
+    box-sizing: border-box;
   }
 
   .contacts__contact-container-email {
     padding-left: 50px;
     margin-left: auto;
+    margin-right: 0;
   }
 
   .contacts__contact-container-adress {
     padding-right: 50px;
+    margin-left: 0;
     margin-right: auto;
+  }
+
+  .contacts__contact-container-button .button {
+    padding: 14px 38px;
   }
 }
 
 @media screen and (min-width: @media-screen-desktop) {
   .contacts {
     flex-direction: column;
-    height: 458px;
+    height: 500px;
+    margin-bottom: 78px;
   }
 
   .contacts__name {
@@ -117,9 +140,15 @@
     line-height: 57px;
   }
 
+  .contacts__name::after {
+    top: -9px;
+    left: 64px;
+  }
+
   .contacts__map {
     order: 5;
     width: 525px;
+    padding-top: 15px;
     margin-bottom: 0;
     margin-right: auto;
   }
@@ -131,25 +160,33 @@
   .contacts__contact-container-name {
     width: 525px;
     margin-left: auto;
-    margin-top: 80px;
+    margin-top: 87px;
   }
+
 
   .contacts__contact-container-email {
     order: 2;
     width: 525px;
     margin-left: auto;
-    margin-bottom: 38px;
-    padding-left: 175px;
+    margin-bottom: 30px;
+    padding-left: 33px;
+  }
+
+  .contacts__contact-container.contacts__contact-container-email {
+    margin-bottom: 30px;
   }
 
   .contacts__contact-container-adress {
     order: 3;
     width: 525px;
     margin-left: auto;
-    margin-bottom: auto;
-    padding-left: 175px;
+    margin-bottom: 80px;
+    padding-left: 33px;
   }
 
+  .contacts__contact-container.contacts__contact-container-adress {
+    margin-bottom: 80px;
+  }
 
   .contacts__contact-container-button {
     order: 4;

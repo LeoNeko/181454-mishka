@@ -136,8 +136,23 @@
 
 @media screen and (min-width: @media-screen-desktop) {
   .about-us {
+    position: relative;
+    padding-top: 122px;
+    height: 500px;
     max-width: 700px;
     margin: 0 auto;
+  }
+
+  .about-us__name {
+    position: absolute;
+    top: -37px;
+    left: 46px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us .advantage:nth-child(5) {
+    margin-top: 0;
   }
 
   .advantage {
