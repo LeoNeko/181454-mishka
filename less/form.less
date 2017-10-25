@@ -4,7 +4,9 @@
 
 .form-header__name {
   .clear-block;
-  padding: 77px 44px;
+  font-size: 27px;
+  line-height: 30px;
+  padding: 74px 44px;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -18,14 +20,14 @@
   .clear-block;
   font-size: 13px;
   line-height: 24px;
-  padding: 30px;
+  padding: 23px 30px 25px 30px;
 }
 
 .form__label {
   position: relative;
   padding-left: 62px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -63,7 +65,7 @@
 .form__checkbox + .form__label {
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .form__checkbox + .form__label::before {
@@ -88,6 +90,7 @@
 }
 
 .form__necessarily {
+  .clear-block;
   font-size: 14px;
   line-height: 16px;
 }
@@ -99,14 +102,28 @@
 }
 
 .from__fieldset {
-  padding-top: 27px;
-  padding-bottom: 27px;
   .padding-main;
+}
+
+.from__fieldset-fio .form__name {
+  margin-bottom: 29px;
+}
+
+.from__fieldset-fio .form__container {
+  margin-bottom: 13px;
+}
+
+.from__fieldset-contacts .form__name {
+  margin-bottom: 0;
+}
+
+.from__fieldset-contacts .form__container {
+  margin-bottom: 13px;
 }
 
 .form__name {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   color: @light-green;
   font-size: 17px;
   line-height: 16px;
@@ -139,14 +156,20 @@
 }
 
 .form__container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 34px;
+}
+
+.form__container.form__container--colors-desctop {
+  margin-bottom: 10px;
 }
 
 .form__container input[type="text"] {
   width: 227px;
   padding-top: 19px;
-  padding-bottom: 19px;
+  padding-bottom: 13px;
   padding-right: 33px;
   margin-bottom: 21px;
   color: #d2d2d2;
@@ -154,6 +177,10 @@
   line-height: 18px;
   border: 0;
   border-bottom: 2px solid black;
+}
+
+.from__fieldset-contacts input[type="text"] {
+  padding-bottom: 18px;
 }
 
 .form__container input[type="text"]:focus {
@@ -168,8 +195,14 @@
   padding-left: 0;
 }
 
-.form__button-container {
-  padding: 0 30px;
+.form__tel + .form__icon,
+.form__email + .form__icon {
+  fill: #cccccc;
+}
+
+.form__tel:hover + .form__icon,
+.form__email:hover + .form__icon {
+  fill: @light-green;
 }
 
 .form__button-container button {
@@ -179,7 +212,7 @@
 }
 
 .form__textarea {
-  padding: 17px;
+  padding: 14px;
   width: 260px;
   min-height: 138px;
 
@@ -191,6 +224,25 @@
   border: 2px solid #444444;
 
   box-sizing: border-box;
+}
+
+.form__icon {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.from__fieldset--textarea .form__container {
+  margin-bottom: 19px;
+}
+
+.form__button-container .button {
+  margin-top: 29px;
+}
+
+.form__button-container {
+  margin-bottom: 51px;
+  padding: 0 30px;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
@@ -269,6 +321,7 @@
   }
 
   .form__necessarily {
+
     order: 2;
     font-size: 17px;
     line-height: 30px;
@@ -281,6 +334,7 @@
   }
 
   .form__container {
+    position: relative;
     width: 501px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -294,7 +348,7 @@
   .form__container input[type="text"] {
     flex-grow: 1;
     padding-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 
     font-size: 19px;
     line-height: 18px;

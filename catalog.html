@@ -14,47 +14,55 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <div class="body-container">
-    <header class="header">
-      <div class="header__image">
-        <a href="index.html">
-          <img src="../img/logo-mobile.svg" width="" height="" />
-        </a>
-      </div>
-      <button class="header__humburger"></button>
-      <div class="header-list__category">
-        <ul class="header-list">
-          <li class="header-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="header-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-list__tecnical">
-        <ul class="header-list">
-          <li class="header-list__item header-list__item--search">
-            <a href="#">
-              <span class="search-info">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="header-list__item header-list__item--basket">
-            <a href="#">Корзина: пока пусто</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-list__extra">
-        <ul class="header-list">
-          <li class="header-list__item header-list__item--desctop-only">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="header-list__item header-list__item--desctop-only">
-            <a href="#">Распродажа</a>
-          </li>
-          <li class="header-list__item header-list__item--tablet">
-            <a href="#">Бесплатная доставка по России</a>
-          </li>
-        </ul>
+    <header>
+      <div class="body-container header">
+        <div class="header__image">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+              <img src="../img/logo-mobile.svg" />
+            </picture>
+          </a>
+          <button type="button" class="header__humburger header__humburger-hidden">
+            <span class="visually-hidden">Скрыть/Показать меню</span>
+          </button>
+        </div>
+        <div class="header-list__category">
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-list__tecnical">
+          <ul class="header-list">
+            <li class="header-list__item header-list__item--search">
+              <a href="#">
+                <span class="search-info">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="header-list__item header-list__item--basket">
+              <a href="#">Корзина: пока пусто</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-list__extra">
+          <ul class="header-list">
+            <li class="header-list__item header-list__item--desctop-only">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="header-list__item header-list__item--desctop-only">
+              <a href="#">Распродажа</a>
+            </li>
+            <li class="header-list__item header-list__item--tablet">
+              <a href="#">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   </div>
