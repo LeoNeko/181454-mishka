@@ -20,7 +20,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-            <img src="../img/logo-mobile.svg" />
+            <img src="../img/logo-mobile.svg" alt="Логотип сайта"/>
           </picture>
         </a>
         <button type="button" class="header__humburger header__humburger-hidden">
@@ -108,10 +108,10 @@
               </tr>
             </table>
           </div>
-          <img class="product-of-week__figure" src="../img/triple-set-mobile@1x.jpg" width="" height="">
+          <img class="product-of-week__figure" src="../img/triple-set-mobile@1x.jpg" alt="Товар недели">
           <div class="product-of-week__container-price">
             <span class="product-of-week__price">Цена: 990 руб</span>
-            <button class="button product-of-week__button" href="#">Заказать</button>
+            <button class="button product-of-week__button">Заказать</button>
           </div>
         </article>
       </section>
@@ -196,15 +196,15 @@
       </div>
       <div class="contacts__contact-container contacts__contact-container-email">
         <span class="contacts__sort">e-mail:</span>
-        <adress class="adress">
+        <div class="adress">
           <span>info@mimimishkashop.ru</span>
-        </adress>
+        </div>
       </div>
       <div class="contacts__contact-container contacts__contact-container-adress">
         <span class="contacts__sort">адрес:</span>
-        <adress class="contacts__adress">г. Санкт-Петербург,
+        <div class="contacts__adress">г. Санкт-Петербург,
           <br> ул. Большая Конюшенная,
-          <br> д. 19/8, офис 101</adress>
+          <br> д. 19/8, офис 101</div>
       </div>
       <div class="contacts__map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36460.28050834251!2d30.2194688!3d55.1698432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1507998410875"
@@ -293,6 +293,8 @@
       </form>
     </div>
   </div>
+  <script type="text/javascript" src="js/picturefill.min.js"></script>
+  <script type="text/javascript" src="js/svg4everybody.min.js"></script>
 </body>
 
 </html>
