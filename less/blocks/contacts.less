@@ -38,6 +38,8 @@
 .contacts__write {
   color: #444444;
   text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
@@ -127,6 +129,10 @@
   .contacts__contact-container-button .button {
     padding: 14px 38px;
   }
+
+  .contacts__write {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: @media-screen-desktop) {
@@ -134,6 +140,10 @@
     flex-direction: column;
     height: 500px;
     margin-bottom: 78px;
+  }
+
+  .contacts__write {
+    margin-left: 0;
   }
 
   .contacts__name {

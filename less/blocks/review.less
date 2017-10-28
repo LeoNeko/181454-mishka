@@ -88,6 +88,8 @@
 .review__link-write {
   color: @dark-grey;
   text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
@@ -110,6 +112,10 @@
     margin-bottom: 133px;
     background: url("../img/review@1x.jpg") no-repeat;
     box-sizing: border-box;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .review::after {
