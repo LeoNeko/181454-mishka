@@ -16,11 +16,11 @@
   <header>
     <div class="body-container header">
       <div class="header__image">
-        <a href="index.html">
+        <a href="#">
           <picture>
             <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-            <img src="../img/logo-mobile.svg" alt="Логотип сайта"/>
+            <img src="../img/logo-mobile.svg" alt="Логотип сайта" />
           </picture>
         </a>
         <button type="button" class="header__humburger header__humburger-hidden">
@@ -75,10 +75,14 @@
     <section class="product-categories">
       <div class="body-container product-categories__direction">
         <div class="product-categories__item product-categories__item--interior">
-          <span class="product-categories__title">Предметы интерьера</span>
+          <a class="product-categories__category-link" href="interior.html">
+            <span class="product-categories__title">Предметы интерьера</span>
+          </a>
         </div>
         <div class="product-categories__item product-categories__item--toys">
-          <span class="product-categories__title">Детские игрушки</span>
+          <a class="product-categories__category-link" href="toys.html">
+            <span class="product-categories__title">Детские игрушки</span>
+          </a>
         </div>
       </div>
     </section>
@@ -111,6 +115,7 @@
           <img class="product-of-week__figure" src="../img/triple-set-mobile@1x.jpg" alt="Товар недели">
           <div class="product-of-week__container-price">
             <span class="product-of-week__price">Цена: 990 руб</span>
+            <!-- При нажатии на элемент с классом "product-of-week__button" происходит открытие модального окна -->
             <button class="button product-of-week__button">Заказать</button>
           </div>
         </article>
@@ -187,7 +192,9 @@
             </svg>
           </button>
         </div>
-        <button class="button">Написать</button>
+        <button class="button">
+          <a class="review__link-write" href="write-review.html">Написать</a>
+        </button>
       </section>
     </div>
     <section class="contacts">
@@ -207,11 +214,15 @@
           <br> д. 19/8, офис 101</div>
       </div>
       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36460.28050834251!2d30.2194688!3d55.1698432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1507998410875"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3144830218426!2d30.322889787687867!3d59.938298706170436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sus!4v1509176717590"
           frameborder="0" style="border:0; width: 100%; height: 457px;" allowfullscreen></iframe>
       </div>
       <div class="contacts__contact-container contacts__contact-container-button">
-        <button class="button">Напишите нам</button>
+        <button class="button">
+          <a class="contacts__write" href="contacts.html">
+            Напишите нам
+          </a>
+        </button>
       </div>
     </section>
   </main>

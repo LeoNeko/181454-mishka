@@ -63,7 +63,13 @@
   height: 22px;
   margin-left: auto;
   background: url("../img/icon-cart.svg") no-repeat;
+  background-size: 20px 20px;
   fill: #c7c7c7;
+}
+
+.products-item__item-link {
+  color: #000000;
+  display: block;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
@@ -135,10 +141,6 @@
 }
 
 @media screen and (min-width: @media-screen-desktop) {
-  .products {
-    margin-bottom: 108px;
-  }
-
   .order-header {
     padding-top: 93px;
     padding-bottom: 97px;
@@ -163,6 +165,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-bottom: 108px;
   }
 
   .products-item {

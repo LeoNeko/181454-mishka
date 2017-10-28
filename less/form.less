@@ -167,7 +167,7 @@
   margin-bottom: 34px;
 }
 
-.form__container input[type="text"] {
+.form__container input[type="text"], .form__container input[type="tel"], .form__container input[type="email"] {
   width: 227px;
   padding-top: 19px;
   padding-bottom: 13px;
@@ -180,15 +180,15 @@
   border-bottom: 2px solid black;
 }
 
-.from__fieldset-contacts input[type="text"] {
+.from__fieldset-contacts input[type="text"], .form__container input[type="tel"], .form__container input[type="email"] {
   padding-bottom: 18px;
 }
 
-.form__container input[type="text"]:focus {
+.form__container input[type="text"]:focus, .form__container input[type="tel"]:focus, .form__container input[type="email"]:focus {
   color: black;
 }
 
-.form__container input[type="text"]:hover {
+.form__container input[type="text"]:hover, .form__container input[type="tel"]:hover, .form__container input[type="email"]:hover {
   border-bottom: 2px solid #63d1bb;
 }
 
@@ -368,7 +368,7 @@
     padding-right: 26px;
   }
 
-  .form__container input[type="text"] {
+  .form__container input[type="text"], .form__container input[type="tel"], .form__container input[type="email"] {
     flex-grow: 1;
     padding-top: 0;
     padding-bottom: 0;
@@ -426,7 +426,7 @@
     padding-bottom: 47px;
   }
 
-  .from__fieldset-contacts input[type="text"] {
+  .from__fieldset-contacts input[type="tel"], .from__fieldset-contacts input[type="email"] {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 50px;
@@ -533,6 +533,6 @@
   }
 
   .form__button-container .button {
-    padding: 15px 30px;
+    padding: 15px 26px;
   }
 }

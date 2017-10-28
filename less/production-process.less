@@ -29,6 +29,10 @@
   box-sizing: border-box;
 }
 
+.production-process__video {
+  position: relative;
+}
+
 .production-process__name::before {
   content: "";
   position: absolute;
@@ -64,6 +68,24 @@
 .production-process__video img {
   display: block;
   width: 100%;
+}
+
+.production-process__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 102px;
+  height: 78px;
+  background-image: url("../img/icon-play.svg");
+}
+
+.production-process__play:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  background-size: cover;
+  outline: 0;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
