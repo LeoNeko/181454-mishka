@@ -28,17 +28,17 @@
             <span class="visually-hidden">Скрыть/Показать меню</span>
           </button>
         </div>
-        <div class="header-list__category">
+        <div class="header-category">
           <ul class="header-list">
             <li class="header-list__item">
-              <a>Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="header-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
         </div>
-        <div class="header-list__tecnical">
+        <div class="header-tecnical">
           <ul class="header-list">
             <li class="header-list__item header-list__item--search">
               <a href="#">
@@ -50,7 +50,7 @@
             </li>
           </ul>
         </div>
-        <div class="header-list__extra">
+        <div class="header-extra">
           <ul class="header-list">
             <li class="header-list__item header-list__item--desctop-only">
               <a href="#">Новые поступления</a>
@@ -88,9 +88,12 @@
               <h3 class="products-item__name">Зайчик-попрыгайчик</h3>
             </a>
             <p class="products-item__description">Рост 30 см, вес 200 г</p>
-            <div class="products-item-container">
+            <div class="products-item__inner">
               <span class="products-item__price">1 200 руб.</span>
-              <i class="products-item__basket"></i>
+              <!-- Нажатие на products-item__modal-windows вызывает модальное окно -->
+              <i class="products-item__basket">
+                <a class="products-item__modal-windows"></a>
+              </i>
             </div>
           </div>
         </article>
@@ -108,9 +111,12 @@
               <h3 class="products-item__name">Корзинка для белья</h3>
             </a>
             <p class="products-item__description">Диаметр 15 см, высота 10 см</p>
-            <div class="products-item-container">
+            <div class="products-item__inner">
               <span class="products-item__price">690 руб.</span>
-              <i class="products-item__basket"></i>
+              <!-- Нажатие на products-item__modal-windows вызывает модальное окно -->
+              <i class="products-item__basket">
+                <a class="products-item__modal-windows"></a>
+              </i>
             </div>
           </div>
         </article>
@@ -128,9 +134,12 @@
               <h3 class="products-item__name">Большая корзинка для игрушек</h3>
             </a>
             <p class="products-item__description">Диаметр 30 см, высота 30 см</p>
-            <div class="products-item-container">
+            <div class="products-item__inner">
               <span class="products-item__price">1 500 руб.</span>
-              <i class="products-item__basket"></i>
+              <!-- Нажатие на products-item__modal-windows вызывает модальное окно -->
+              <i class="products-item__basket">
+                <a class="products-item__modal-windows"></a>
+              </i>
             </div>
           </div>
         </article>
