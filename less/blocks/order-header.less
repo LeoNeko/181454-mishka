@@ -1,0 +1,42 @@
+.order-header {
+  position: relative;
+  padding: 74px 0;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+}
+
+.order-header__name {
+  .clear-block;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .order-header {
+    padding-top: 97px;
+    margin-top: -72px;
+    margin-bottom: 83px;
+    background-color: #f1f1f1;
+  }
+
+  .order-header__name {
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .order-header {
+    padding-top: 93px;
+    padding-bottom: 97px;
+    margin-bottom: 136px;
+    border-top: 2px solid @background-light_grey;
+  }
+
+  .order-header__name {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
