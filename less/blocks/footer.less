@@ -11,7 +11,7 @@
 .footer__social-links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
   width: 260px;
   margin: 0 auto;
@@ -26,10 +26,15 @@
 .footer__social-links i {
   display: flex;
   align-items: flex-end;
-  padding-right: 14px;
+  padding-right: 42px;
   width: 30px;
   height: 28px;
   vertical-align: middle;
+}
+
+.footer__social-links i:last-child {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .footer__htmlacademy {
@@ -78,6 +83,8 @@
   }
 
   .footer__htmlacademy {
+    position: relative;
+    top: 7px;
     width: auto;
     padding: 0;
   }
@@ -85,6 +92,7 @@
   .footer__autor {
     width: auto;
     padding-left: 0;
+    padding-right: 28px;
   }
 
   .footer__htmlacademy,

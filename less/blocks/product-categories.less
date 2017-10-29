@@ -1,0 +1,132 @@
+.product-categories {
+  background: #fafafa;
+}
+
+.product-categories__direction {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.product-categories__item {
+  .padding-main;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: #ffffff;
+}
+
+.product-categories__item--interior {
+  background: @light-green;
+}
+
+.product-categories__item--toys {
+  background: @dark-green;
+}
+
+.product-categories__title {
+  display: block;
+  width: 130px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.product-categories__item--interior,
+.product-categories__item--toys {
+  flex-grow: 1;
+  position: relative;
+}
+
+.product-categories__item--interior::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 37px;
+  width: 40px;
+  height: 62px;
+  background: url("../img/icon-interior.svg") no-repeat center;
+}
+
+.product-categories__item--toys::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-toy.svg") no-repeat center;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .product-categories__direction {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+
+  .product-categories {
+    position: relative;
+    padding: 0;
+  }
+
+  .form-header__name::after,
+  .order-header::after,
+  .product-categories::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    height: 23px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+  }
+
+  .header-index {
+    border-top: 1px solid #f1f1f1;
+  }
+
+  .product-categories__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .product-categories__item--interior,
+  .product-categories__item--toys {
+    padding-left: 34px;
+  }
+
+  .product-categories__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .product-categories__item--interior::after {
+    top: 30px;
+  }
+
+  .product-categories__item--toys::after {
+    top: 30px;
+    right: 37px;
+  }
+
+  .product-of-week__figure {
+    padding-top: 8px;
+  }
+}
+
+.product-categories__category-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .form-header__name::after,
+  .order-header::after,
+  .product-categories::after {
+    bottom: -16px;
+    height: 34px;
+    background-size: 1150px 34px;
+  }
+}

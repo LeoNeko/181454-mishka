@@ -1,0 +1,48 @@
+.table-properties {
+  width: 100%;
+  margin-bottom: 28px;
+
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+
+  border-collapse: collapse;
+}
+
+.table-properties__tr {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.table-properties__td {
+  padding: 8px 0;
+}
+
+.table-properties__td:first-child {
+  width: 100px;
+}
+
+@media screen and (min-width: @media-screen-tablet) {
+  .table-properties__td {
+    padding: 10px 0;
+    line-height: 20px;
+  }
+
+  .product-of-week__price {
+    padding-top: 27px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: @media-screen-desktop) {
+  .table-properties__td {
+    padding: 10px 0;
+    line-height: 20px;
+  }
+
+  .table-properties {
+    width: 292px;
+    margin-left: auto;
+  }
+}

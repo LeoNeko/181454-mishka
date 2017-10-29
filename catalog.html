@@ -10,48 +10,59 @@
 </head>
 
 <body class="body">
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="body-container">
-    <header class="header">
-      <div class="header__image">
-        <a href="index.html">
-          <img src="../img/logo-mobile.svg" width="" height="" />
-        </a>
-      </div>
-      <button class="header__humburger"></button>
-      <div class="header-list__category">
-        <ul class="header-list">
-          <li class="header-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="header-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-list__tecnical">
-        <ul class="header-list">
-          <li class="header-list__item header-list__item--search">
-            <a href="#">
-              <span class="search-info">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="header-list__item header-list__item--basket">
-            <a href="#">Корзина: пока пусто</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-list__extra">
-        <ul class="header-list">
-          <li class="header-list__item header-list__item--desctop-only">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="header-list__item header-list__item--desctop-only">
-            <a href="#">Распродажа</a>
-          </li>
-          <li class="header-list__item header-list__item--tablet">
-            <a href="#">Бесплатная доставка по России</a>
-          </li>
-        </ul>
+    <header>
+      <div class="body-container header">
+        <div class="header__image">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+              <img src="../img/logo-mobile.svg" alt="Логотип сайта" />
+            </picture>
+          </a>
+          <button type="button" class="header__humburger header__humburger-hidden">
+            <span class="visually-hidden">Скрыть/Показать меню</span>
+          </button>
+        </div>
+        <div class="header-category">
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-tecnical">
+          <ul class="header-list">
+            <li class="header-list__item header-list__item--search">
+              <a href="#">
+                <span class="search-info">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="header-list__item header-list__item--basket">
+              <a href="#">Корзина: пока пусто</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-extra">
+          <ul class="header-list">
+            <li class="header-list__item header-list__item--desctop-only">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="header-list__item header-list__item--desctop-only">
+              <a href="#">Распродажа</a>
+            </li>
+            <li class="header-list__item header-list__item--tablet">
+              <a href="#">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   </div>
@@ -64,35 +75,71 @@
     <div class="body-container">
       <section class="products">
         <article class="products-item">
-          <img class="products-item__figure" src="../img/photo-hare-mobile@1x.jpg" />
+          <a href="photo-banny.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="../img/photo-hare-desktop@1x.jpg 1x, ../img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../img/photo-hare-tablet@1x.jpg 1x, ../img/photo-hare-tablet@2x.jpg 2x">
+              <img class="products-item__figure" src="../img/photo-hare-mobile@1x.jpg" srcset="../img/photo-hare-mobile@2x.jpg 2x" alt="Фото игрушки зайца"
+              />
+            </picture>
+          </a>
           <div class="products-item__container">
-            <h3 class="products-item__name">Зайчик-попрыгайчик</h3>
+            <a class="products-item__item-link" href="photo-banny.html">
+              <h3 class="products-item__name">Зайчик-попрыгайчик</h3>
+            </a>
             <p class="products-item__description">Рост 30 см, вес 200 г</p>
-            <div class="products-item-container">
+            <div class="products-item__inner">
               <span class="products-item__price">1 200 руб.</span>
-              <i class="products-item__basket"></i>
+              <!-- Нажатие на products-item__modal-windows вызывает модальное окно -->
+              <i class="products-item__basket">
+                <a class="products-item__modal-windows"></a>
+              </i>
             </div>
           </div>
         </article>
         <article class="products-item">
-          <img class="products-item__figure" src="../img/photo-bowl-mobile@1x.jpg" />
+          <a href="laundry-basket.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="../img/photo-bowl-desktop@1x.jpg 1x, ../img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../img/photo-bowl-tablet@1x.jpg 1x, ../img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="products-item__figure" src="../img/photo-bowl-mobile@1x.jpg" srcset="../img/photo-bowl-mobile@2x.jpg 2x" alt="Фото игрушки зайца"
+              />
+            </picture>
+          </a>
           <div class="products-item__container">
-            <h3 class="products-item__name">Корзинка для белья</h3>
+            <a class="products-item__item-link" href="laundry-basket.html">
+              <h3 class="products-item__name">Корзинка для белья</h3>
+            </a>
             <p class="products-item__description">Диаметр 15 см, высота 10 см</p>
-            <div class="products-item-container">
+            <div class="products-item__inner">
               <span class="products-item__price">690 руб.</span>
-              <i class="products-item__basket"></i>
+              <!-- Нажатие на products-item__modal-windows вызывает модальное окно -->
+              <i class="products-item__basket">
+                <a class="products-item__modal-windows"></a>
+              </i>
             </div>
           </div>
         </article>
         <article class="products-item">
-          <img class="products-item__figure" src="../img/photo-toys-mobile@1x.jpg" />
+          <a href="basket-for-toys.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
+              <img class="products-item__figure" src="../img/photo-toys-mobile@1x.jpg" srcset="../img/photo-toys-mobile@2x.jpg 2x" alt="Фото корзинки для белья"
+              />
+            </picture>
+          </a>
           <div class="products-item__container">
-            <h3 class="products-item__name">Большая корзинка для игрушек</h3>
+            <a class="products-item__item-link" href="basket-for-toys.html.html">
+              <h3 class="products-item__name">Большая корзинка для игрушек</h3>
+            </a>
             <p class="products-item__description">Диаметр 30 см, высота 30 см</p>
-            <div class="products-item-container">
+            <div class="products-item__inner">
               <span class="products-item__price">1 500 руб.</span>
-              <i class="products-item__basket"></i>
+              <!-- Нажатие на products-item__modal-windows вызывает модальное окно -->
+              <i class="products-item__basket">
+                <a class="products-item__modal-windows"></a>
+              </i>
             </div>
           </div>
         </article>
@@ -101,9 +148,14 @@
             <h2 class="production-process__name">Процесс производства</h2>
           </div>
           <div class="production-process__video">
-            <img src="../img/video-mobile@1x.jpg" />
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+              <img src="../img/video-mobile@1x.jpg" srcset="../img/video-mobile@2x.jpg 2x" alt="Фото игрушки зайца" />
+            </picture>
+            <a href="#" class="production-process__play"></a>
           </div>
-          <div class="production-process__container">
+          <div class="production-process__container production-process__container--description">
             <p class="production-process__description">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
@@ -114,18 +166,62 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="body-container">
+    <div class="body-container body-container--footer">
+      <div class="footer__image">
+        <a href="index.html">
+          <svg width="100" height="33">
+            <use xlink:href="#icon-footer"></use>
+          </svg>
+        </a>
+      </div>
       <div class="footer__social-links">
-        <i class="footer__instagram"></i>
-        <i class="footer__facebook"></i>
-        <i class="footer__twitter"></i>
+        <i class="footer__instagram">
+          <svg class="footer__icons" width="22px" height="22px">
+            <use xlink:href="#icon-insta"></use>
+          </svg>
+        </i>
+        <i class="footer__facebook">
+          <svg class="footer__icons" width="14.962px" height="27.718px">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+        </i>
+        <i class="footer__twitter">
+          <svg class="footer__icons" width="23.494px" height="20.168px">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </i>
       </div>
       <div class="footer__htmlacademy">
         <p class="footer__autor">Разработано</p>
-        <svg></svg>
+        <svg class="footer__icons" fill="#63d1bb" width="26.943px" height="34.09px">
+          <use xlink:href="#icon-htmlacademy"></use>
+        </svg>
       </div>
     </div>
   </footer>
+  <div class="modal-container">
+    <div class="modal">
+      <p class="maodal__title">Добавить в корзину</p>
+      <p class="modal__description">Выберите размер:</p>
+      <form class="modal__container">
+        <div class="modal__size">
+          <input type="radio" class="modal__input-size" name="size" value="s" id="s-size" checked>
+          <label class="size-select__label" for="s-size">S</label>
+        </div>
+        <div class="modal__size">
+          <input type="radio" class="modal__input-size" name="size" value="m" id="m-size">
+          <label class="size-select__label" for="m-size">M</label>
+        </div>
+        <div class="modal__size">
+          <input type="radio" class="modal__input-size" name="size" value="l" id="l-size">
+          <label class="size-select__label" for="l-size">L</label>
+        </div>
+        <button class="modal__send">Добавить</button>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/picturefill.min.js"></script>
+  <script type="text/javascript" src="js/svg4everybody.min.js"></script>
 </body>
 
 </html>

@@ -3,14 +3,20 @@
 }
 
 .production-process__container {
-  padding-top: 30px;
-  padding-bottom: 32px;
-  padding-left: 33px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 39px;
   padding-right: 33px;
+}
+
+.production-process__container--description {
+  padding-top: 26px;
+  padding-left: 34px;
 }
 
 .production-process__container button {
   padding: 17px 20px;
+  margin-bottom: 5px;
 }
 
 .production-process__name {
@@ -23,11 +29,15 @@
   box-sizing: border-box;
 }
 
+.production-process__video {
+  position: relative;
+}
+
 .production-process__name::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: 6px;
+  left: -5px;
   width: 40px;
   height: 26px;
   background: url("../img/icon-video.svg") no-repeat;
@@ -35,7 +45,7 @@
 
 .production-process__description {
   .clear-block;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -60,6 +70,24 @@
   width: 100%;
 }
 
+.production-process__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 102px;
+  height: 78px;
+  background-image: url("../img/icon-play.svg");
+}
+
+.production-process__play:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  background-size: cover;
+  outline: 0;
+}
+
 @media screen and (min-width: @media-screen-tablet) {
   .production-process {
     display: flex;
@@ -73,12 +101,26 @@
   }
 
   .production-process__name {
-    padding-top: 10px;
+    padding-top: 13px;
+    padding-left: 65px;
     font-size: 20px;
   }
 
   .production-process__name::before {
-    top: 5px;
+    top: 9px;
+    left: -1px;
+  }
+
+  .production-process__container--description {
+    padding-top: 7px;
+    padding-bottom: 38px;
+  }
+
+  .production-process__description {
+    color: #444444;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
   }
 }
 

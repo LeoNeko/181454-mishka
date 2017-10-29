@@ -1,5 +1,10 @@
 .review {
   .padding-main;
+  margin-bottom: 87px;
+}
+
+.review .button {
+  padding: 14px 49px;
 }
 
 .review__block-title {
@@ -11,12 +16,13 @@
 
 .rewiew__description {
   .clear-block;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
+  color: #444444;
   font-size: 15px;
   line-height: 30px;
 }
 
-.review__fio {
+.review__name {
   .clear-block;
   font-size: 17px;
   line-height: 24px;
@@ -25,6 +31,7 @@
 
 .review__nickname {
   .clear-block;
+  color: #444444;
   font-size: 17px;
   line-height: 30px;
 }
@@ -35,13 +42,13 @@
 
 .review__container-button {
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .review__left-slide,
 .review__right-slide {
   width: 50%;
-  height: 50px;
+  height: 52px;
   font-size: 0;
   fill: #000000;
   background-color: transparent;
@@ -55,23 +62,17 @@
   fill: rgba(0, 0, 0, 0.6);
 }
 
-.contacts__contact-container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
+.review__link-write {
+  color: @dark-grey;
+  text-decoration: none;
+  text-align: center;
   box-sizing: border-box;
-}
-
-.contacts__map {
-  width: 100%;
-  height: 457px;
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: @media-screen-tablet) {
   .review__block-title {
     order: 1;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     margin-right: auto;
     font-size: 43px;
     line-height: 50px;
@@ -79,24 +80,46 @@
 
   .review {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 457px;
-    padding-top: 79px;
+    min-height: 469px;
+    padding-top: 77px;
     padding-right: 0;
+    margin-bottom: 133px;
     background: url("../img/review@1x.jpg") no-repeat;
     box-sizing: border-box;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/review@2x.jpg") no-repeat;
+    }
+  }
+
+  .review::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -71px;
+    left: 0;
+    height: 16px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 16px;
   }
 
   .review .button {
     order: 2;
     height: 52px;
     width: 175px;
-    margin-right: 0;
+    margin-right: 50px;
+    padding: 18px 38px;
   }
 
   .rewiew__description {
     order: 3;
+    width: 645px;
+    margin-bottom: 30px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -108,18 +131,56 @@
 
   .review__container-button {
     order: 5;
+    margin-right: 50px;
+  }
+
+  .review__name {
+    margin-bottom: 5px;
+  }
+
+  .review__left-slide,
+  .review__right-slide {
+    padding: 17px 19px;
+    border: 0;
   }
 }
 
 @media screen and (min-width: @media-screen-desktop) {
   .review {
+    padding-top: 70px;
     padding-left: 175px;
     margin-right: 50px;
     margin-left: 50px;
+    min-height: inherit;
+    margin-bottom: 128px;
+  }
+
+  .review__container-contacts {
+    margin-bottom: 112px;
+  }
+
+  .review .button {
+    margin-top: 8px;
+    margin-right: 0;
   }
 
   .review__block-title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 49px;
+  }
+
+  .rewiew__description {
+    width: 770px;
+    margin-bottom: 37px;
+  }
+
+  .review__container-button {
+    margin-right: 0;
+  }
+
+  .review::after {
+    height: 23px;
+    background-size: 1150px 23px;
   }
 }
