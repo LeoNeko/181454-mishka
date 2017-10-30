@@ -51,7 +51,16 @@
   margin-left: auto;
   background: url("../img/icon-cart.svg") no-repeat;
   background-size: 20px 20px;
-  fill: #c7c7c7;
+}
+
+.products-item__basket:hover {
+  background: url("../img/icon-cart-green.svg") no-repeat;
+  background-size: 20px 20px;
+}
+
+.products-item__basket:active {
+  background: url("../img/icon-cart-green-light.svg") no-repeat;
+  background-size: 20px 20px;
 }
 
 .products-item__item-link {
@@ -62,6 +71,14 @@
 .products-item__modal-windows {
   display: block;
   height: 20px;
+}
+
+.products-item:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.products-item:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: @media-screen-tablet) {
